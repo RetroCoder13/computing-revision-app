@@ -7,10 +7,16 @@ window.onload=function(){
     correct = 0;
     wrong = 0;
 
-    topic = prompt('Topic?')
+    topic = 1
 
     newQuestion()
 };
+
+function changeTopic(){
+    topic = parseInt(document.getElementById('topic').value)
+
+    newQuestion()
+}
 
 function newQuestion(){
     questionNumber = parseInt(Math.random()*(Object.keys(questions["T"+topic]).length));
@@ -46,6 +52,6 @@ function answer(element){
         wrong += 1;
         setTimeout(function(){newQuestion()},1000)
     };
-    scoreCorrect.innerHTML = correct
-    scoreWrong.innerHTML = wrong
+    scoreCorrect.innerHTML = "Correct: " + correct
+    scoreWrong.innerHTML = "Incorrect: " + wrong
 };

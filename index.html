@@ -8,8 +8,18 @@
 </head>
 <body>
     <h1>Revision Multiple Choice Questions</h1>
-    <div id="correct"><p id="scoreCorrect">0</p></div>
-    <div id="wrong"><p id="scoreWrong">0</p></div>
+    <select name="topic" id="topic" onchange="changeTopic()">
+        <option value="1">Topic 1</option>
+        <option value="2">Topic 2</option>
+        <option value="3">Topic 3</option>
+        <option value="4">Topic 4</option>
+        <option value="5">Topic 5</option>
+    </select>
+    <br><br>
+    <div id="results">
+        <p id="scoreCorrect" style="color: green;">Correct: 0</p>
+        <p id="scoreWrong" style="color: red;">Incorrect: 0</p>
+    </div>
     <div id="questions">
         <h2 id="question">Question</h2>
         <div id="answers"></div>

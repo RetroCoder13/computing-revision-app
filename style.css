@@ -16,16 +16,12 @@ button:hover{
     border-color: gray;
 }
 
-div#correct{
-    width: 100px;
-    height: 100px;
-    background-color: green;
+div#results label{
+    text-align: start;
 }
 
-div#wrong{
-    width: 100px;
-    height: 100px;
-    background-color: red;
+div#results p{
+    text-align: start;
 }
 
 p{
