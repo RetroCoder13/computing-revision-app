@@ -3,9 +3,37 @@ questions = {
         0:{
             "question":"What does MAR stand for?",
             "correctAnswer":"Memory Address Register",
-            "answer0":"",
-            "answer1":"",
+            "answer0":"Memory Anchor Register",
+            "answer1":"Memory Architecture Register",
+            "answer2":"Memory Active Register"
+        },
+        1:{
+            "question":"What does MDR stand for?",
+            "correctAnswer":"Memory Data Register",
+            "answer0":"Memory Date Register",
+            "answer1":"Memory Drone Register",
+            "answer2":"Memory Drain Register"
+        },
+        2:{
+            "question":"What is the function of the CPU?",
+            "correctAnswer":"Process data and instructions",
+            "answer0":"Store data",
+            "answer1":"Move data from one place to another",
             "answer2":""
+        },
+        3:{
+            "question":"Which storage device is best suited for a phone?",
+            "correctAnswer":"Solid State",
+            "answer0":"Optical",
+            "answer1":"Magnetic",
+            "answer2":"Other"
+        },
+        4:{
+            "question":"Which storage device is a DVD?",
+            "correctAnswer":"Optical",
+            "answer0":"Other",
+            "answer1":"Magnetic",
+            "answer2":"Solid State"
         }
     },
     "T2":{
@@ -107,11 +135,11 @@ questions = {
     },
     "T5":{
         0:{
-            "question":"",
-            "correctAnswer":"",
-            "answer0":"",
-            "answer1":"",
-            "answer2":""
+            "question":"Which law is broken when logging onto someone elses computer without permission?",
+            "correctAnswer":"Computer Misuse Act",
+            "answer0":"Copyright, Designs and Patents Act",
+            "answer1":"Data Protection Act",
+            "answer2":"Equality Act"
         }
     }
 }
