@@ -1,0 +1,33 @@
+html{
+    font-family: OCR A;
+}
+
+button{
+    font-family: OCR A;
+    font-size: 25px;
+    background: gray;
+    border-radius: 10px;
+    border-color: darkgray;
+    height: 100px;
+    width: 1000px;
+}
+
+button:hover{
+    border-color: gray;
+}
+
+div#correct{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+div#wrong{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+p{
+    text-align: center;
+}
