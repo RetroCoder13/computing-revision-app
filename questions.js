@@ -147,6 +147,13 @@ questions = {
             "answer0":"Copyright, Designs and Patents Act",
             "answer1":"Data Protection Act",
             "answer2":"Equality Act"
+        },
+        1:{
+            "question":"What is Open Source?",
+            "correctAnswer":"Anyone can use it and modify it",
+            "answer0":"Sold as a lisence to use it",
+            "answer1":"Person who made it has copyright over it",
+            "answer2":"You cannot modify or use it"
         }
     }
 }
