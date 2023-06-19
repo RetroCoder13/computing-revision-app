@@ -131,6 +131,13 @@ questions = {
             "answer0":"Death of Server",
             "answer1":"Deletion of Server",
             "answer2":"Destination of Service"
+        },
+        1:{
+            "question":"What is utility software?",
+            "correctAnswer":"Small program designed to do one specific task",
+            "answer0":"Operating System",
+            "answer1":"Large program that does a wide range of tasks",
+            "answer2":"Software designed to protect your computer"
         }
     },
     "T5":{
