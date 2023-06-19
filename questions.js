@@ -19,7 +19,7 @@ questions = {
             "correctAnswer":"Process data and instructions",
             "answer0":"Store data",
             "answer1":"Move data from one place to another",
-            "answer2":""
+            "answer2":"Store instructions"
         },
         3:{
             "question":"Which storage device is best suited for a phone?",
