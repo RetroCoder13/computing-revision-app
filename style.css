@@ -1,9 +1,14 @@
+@font-face {
+    font-family: PageFont;
+    src: url(./assets/font/Rajdhani-Regular.ttf);
+}
+
 html{
-    font-family: OCR A;
+    font-family: PageFont;
 }
 
 button{
-    font-family: OCR A;
+    font-family: PageFont;
     font-size: 25px;
     background: gray;
     border-radius: 10px;
