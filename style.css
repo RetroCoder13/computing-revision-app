@@ -1,14 +1,11 @@
-@font-face {
-    font-family: PageFont;
-    src: url(./assets/font/Rajdhani-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
 
 html{
-    font-family: PageFont;
+    font-family: 'Rajdhani';
 }
 
 button{
-    font-family: PageFont;
+    font-family: 'Rajdhani';
     font-size: 25px;
     background: gray;
     border-radius: 10px;
