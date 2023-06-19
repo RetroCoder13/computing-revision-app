@@ -33,3 +33,7 @@ p{
 option{
     font-family: 'Rajdhani';
 }
+
+p#numberOfQuestions{
+    text-align: start;
+}

@@ -3,17 +3,20 @@ window.onload=function(){
     answers = document.getElementById('answers');
     scoreCorrect = document.getElementById('scoreCorrect');
     scoreWrong = document.getElementById('scoreWrong');
+    numberOfQuestions = document.getElementById('numberOfQuestions')
 
     correct = 0;
     wrong = 0;
 
     topic = 1
+    numberOfQuestions.innerHTML = Object.keys(questions["T"+topic]).length + " Question(s) for this topic"
 
     newQuestion()
 };
 
 function changeTopic(){
     topic = parseInt(document.getElementById('topic').value)
+    numberOfQuestions.innerHTML = Object.keys(questions["T"+topic]).length + " Question(s) for this topic"
 
     newQuestion()
 }
