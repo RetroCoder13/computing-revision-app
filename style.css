@@ -2,6 +2,7 @@
 
 html{
     font-family: 'Rajdhani';
+    text-align: center;
 }
 
 button{
@@ -22,22 +23,10 @@ div#results label{
     text-align: start;
 }
 
-div#results p{
-    text-align: start;
-}
-
-p{
-    text-align: center;
-}
-
 select{
     font-family: 'Rajdhani';
 }
 
 option{
     font-family: 'Rajdhani';
-}
-
-p#numberOfQuestions{
-    text-align: start;
 }
