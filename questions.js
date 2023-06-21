@@ -45,7 +45,7 @@ questions = {
             "answer2":"ASCII"
         },
         1:{
-            "question":"Convert FF from hexadecimal to binary?",
+            "question":"Convert FF from hexadecimal to binary",
             "correctAnswer":"11111111",
             "answer0":"10101010",
             "answer1":"01010101",
@@ -71,6 +71,27 @@ questions = {
             "answer0":"A set of characters in a film",
             "answer1":"Converts a word into a character",
             "answer2":"A string of characters"
+        },
+        5:{
+            "question":"Convert E3 from hexadecimal to binary",
+            "correctAnswer":"11100011",
+            "answer0":"11110011",
+            "answer1":"11000111",
+            "answer2":"11100111"
+        },
+        6:{
+            "question":"Convert 11001101 from binary to hexadecimal",
+            "correctAnswer":"CD",
+            "answer0":"CB",
+            "answer1":"BC",
+            "answer2":"DC"
+        },
+        7:{
+            "question":"Convert 11001101 from binary to denary",
+            "correctAnswer":"205",
+            "answer0":"152",
+            "answer1":"323",
+            "answer2":"203"
         }
     },
     "T3":{
@@ -128,6 +149,13 @@ questions = {
             "correctAnswer":"Sending and recieving files",
             "answer0":"Sending and recieving websites securely",
             "answer1":"Sending and recieving emails",
+            "answer2":"Sending and recieving websites"
+        },
+        8:{
+            "question":"What is SMTP used for?",
+            "correctAnswer":"Sending and recieving emails",
+            "answer0":"Sending and recieving websites securely",
+            "answer1":"Sending and recieving files",
             "answer2":"Sending and recieving websites"
         }
     },
