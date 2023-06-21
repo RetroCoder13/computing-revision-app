@@ -64,6 +64,13 @@ questions = {
             "answer0":"1011",
             "answer1":"1010",
             "answer2":"1111"
+        },
+        4:{
+            "question":"What is a character set?",
+            "correctAnswer":"Converts a code into a character",
+            "answer0":"A set of characters in a film",
+            "answer1":"Converts a word into a character",
+            "answer2":"A string of characters"
         }
     },
     "T3":{
@@ -138,6 +145,34 @@ questions = {
             "answer0":"Operating System",
             "answer1":"Large program that does a wide range of tasks",
             "answer2":"Software designed to protect your computer"
+        },
+        2:{
+            "question":"What is memory management an example of?",
+            "correctAnswer":"Utility software",
+            "answer0":"Malware",
+            "answer1":"Disk and File Management",
+            "answer2":"Antivirus Software"
+        },
+        3:{
+            "question":"What is phishing?",
+            "correctAnswer":"An email that tricks you into giving personal info",
+            "answer0":"Direct observation of a user entering data",
+            "answer1":"Go through a list of passwords until access is granted",
+            "answer2":"A virus software that infects the target computer"
+        },
+        4:{
+            "question":"What is shoulder surfing?",
+            "correctAnswer":"Direct observation of a user entering data",
+            "answer0":"A virus software that infects the target computer",
+            "answer1":"An email that tricks you into giving personal info",
+            "answer2":"Go through a list of passwords until access is granted"
+        },
+        5:{
+            "question":"What is a brute force attack?",
+            "correctAnswer":"Go through a list of passwords until access is granted",
+            "answer0":"An email that tricks you into giving personal info",
+            "answer1":"Direct observation of a user entering data",
+            "answer2":"A virus software that infects the target computer"
         }
     },
     "T5":{
@@ -154,6 +189,34 @@ questions = {
             "answer0":"Sold as a lisence to use it",
             "answer1":"Person who made it has copyright over it",
             "answer2":"You cannot modify or use it"
+        },
+        2:{
+            "question":"What year was the Data Protection Act?",
+            "correctAnswer":"1998",
+            "answer0":"1990",
+            "answer1":"1988",
+            "answer2":"2000"
+        },
+        3:{
+            "question":"What year was the Computer Misuse Act?",
+            "correctAnswer":"1990",
+            "answer0":"2000",
+            "answer1":"1988",
+            "answer2":"1998"
+        },
+        4:{
+            "question":"What year was the Copyright, Designs and Patents Act?",
+            "correctAnswer":"1988",
+            "answer0":"1998",
+            "answer1":"2000",
+            "answer2":"1990"
+        },
+        5:{
+            "question":"What year was the Freedom of Information Act?",
+            "correctAnswer":"2000",
+            "answer0":"1988",
+            "answer1":"1998",
+            "answer2":"1990"
         }
     }
 }
