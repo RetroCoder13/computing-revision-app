@@ -17,11 +17,9 @@ async function load(){
 
 async function update(){
     username = document.getElementById('username').innerHTML
-    correct = parseInt(document.getElementById('scoreCorrect').innerHTML.replace("Correct: ",""))
-    incorrect = parseInt(document.getElementById('scoreWrong').innerHTML.replace("Incorrect: ",""))
     var { data, error } = await supabaseClient
         .from('users')
-        .update({correct:correct, incorrect:incorrect})
+        .update({correct:correct, incorrect:wrong})
         .eq('username',username)
 }
 
