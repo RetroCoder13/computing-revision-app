@@ -1,4 +1,9 @@
 window.onload=function(){
+    var request = new XMLHttpRequest()
+    request.open("GET","https://raw.githubusercontent.com/RetroCoder13/computing-revision-app/questions/questions.js",false);
+    request.send(null)
+    eval(request.responseText)
+
     question = document.getElementById('question');
     answers = document.getElementById('answers');
     scoreCorrect = document.getElementById('scoreCorrect');
