@@ -31,7 +31,7 @@ function newQuestion(){
     answers.innerHTML = "";
     for(let i=0;i<4;i++){
         if(correctAnswerPosition==i){
-            answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\" id="correctAnswer">${questions["T"+topic][questionNumber]["correctAnswer"]}</button><br>`
+            answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions["T"+topic][questionNumber]["correctAnswer"]}</button><br>`
             correctAnswer = true;
         } else {
             if(correctAnswer==true){
@@ -44,7 +44,7 @@ function newQuestion(){
 }
 
 function answer(element){
-    if(element.id=="correctAnswer"){
+    if(element.innerHTML==questions["T"+topic][questionNumber]["correctAnswer"]){
         // answers.innerHTML = "Correct"
         correct += 1;
         // setTimeout(function(){newQuestion()},1000)
