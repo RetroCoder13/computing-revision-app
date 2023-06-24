@@ -3,6 +3,7 @@ async function load(){
         var { data, error } = await supabaseClient
             .from('users')
             .select()
+            .eq('id',JSON.parse(localStorage.getItem("sb-hxfnilmbkorrzhhnohzp-auth-token"))["user"]["id"])
         // console.log(data)
         document.getElementById('username').innerHTML = data[0]['username']
         document.getElementById('scoreCorrect').innerHTML = "Correct: " + data[0]['correct']
