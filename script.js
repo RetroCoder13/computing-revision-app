@@ -57,4 +57,5 @@ function answer(element){
     };
     scoreCorrect.innerHTML = "Correct: " + correct
     scoreWrong.innerHTML = "Incorrect: " + wrong
+    update()
 };

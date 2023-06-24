@@ -7,6 +7,10 @@
     <script src="./gradient.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="CPU.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="./setup.js"></script>
+    <script src="./database.js"></script>
 </head>
 <body>
     <h1>Revision Multiple Choice Questions</h1>
@@ -27,5 +31,9 @@
         <h2 id="question">Question</h2>
         <div id="answers"></div>
     </div>
+
+    <h1 id="username"></h1>
+    <button id="signOut" onclick="signOut()">Sign Out</button>
+    <button id="leaderboard" onclick="location.href = './leaderboard'">Leaderboard</button>
 </body>
 </html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../CPU.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../setup.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Computing Revision | Login</title>
+</head>
+<body onkeypress="if(event.key=='Enter'){newUser()}">
+    <input type="text" placeholder="Name (only needed for first login)" id="username">
+    <input type="text" placeholder="Email" id="email">
+    <input type="password" placeholder="Password" id="password">
+    <button onclick="newUser()">Login</button>
+    <p id="complete"></p>
+</body>
+</html>
