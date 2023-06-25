@@ -14,14 +14,14 @@ window.onload=function(){
     wrong = 0;
 
     topic = 1
-    numberOfQuestions.innerHTML = Object.keys(questions["T"+topic]).length + " Question(s) for this topic"
+    numberOfQuestions.innerHTML = Object.keys(questions["T"+topic]).length + " Question(s) for this topic<br>" + (Object.keys(questions["T1"]).length + Object.keys(questions["T2"]).length + Object.keys(questions["T3"]).length + Object.keys(questions["T4"]).length + Object.keys(questions["T5"]).length) + " total questions across all topics"
 
     newQuestion()
 };
 
 function changeTopic(){
     topic = parseInt(document.getElementById('topic').value)
-    numberOfQuestions.innerHTML = Object.keys(questions["T"+topic]).length + " Question(s) for this topic"
+    numberOfQuestions.innerHTML = Object.keys(questions["T"+topic]).length + " Question(s) for this topic<br>" + (Object.keys(questions["T1"]).length + Object.keys(questions["T2"]).length + Object.keys(questions["T3"]).length + Object.keys(questions["T4"]).length + Object.keys(questions["T5"]).length) + " total questions across all topics"
 
     newQuestion()
 }
