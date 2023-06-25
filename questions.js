@@ -34,6 +34,55 @@ questions = {
             "answer0":"Other",
             "answer1":"Magnetic",
             "answer2":"Solid State"
+        },
+        5:{
+            "question":"What is secondary storage?",
+            "correctAnswer":"Where data that is stored permenantly",
+            "answer0":"Where the boot instructions are stored",
+            "answer1":"Where data the computer is currently using is stored",
+            "answer2":"Where some data the CPU is using frequently is stored"
+        },
+        6:{
+            "question":"What is primary storage?",
+            "correctAnswer":"Where data the computer is currently using is stored",
+            "answer0":"Where the boot instructions are stored",
+            "answer1":"Where some data the CPU is using frequently is stored",
+            "answer2":"Where data that is stored permenantly"
+        },
+        7:{
+            "question":"What is an example of secondary storage?",
+            "correctAnswer":"HDD",
+            "answer0":"RAM",
+            "answer1":"CPU",
+            "answer2":"ROM"
+        },
+        8:{
+            "question":"What is an example of primary storage?",
+            "correctAnswer":"RAM",
+            "answer0":"ROM",
+            "answer1":"HDD",
+            "answer2":"CPU"
+        },
+        9:{
+            "question":"What is virtual memory?",
+            "correctAnswer":"Memory temporarily stored in the hard drive",
+            "answer0":"Memory the computer is using",
+            "answer1":"Data stored in the hard drive",
+            "answer2":"Memory the CPU is using frequently"
+        },
+        10:{
+            "question":"What is cache memory?",
+            "correctAnswer":"Memory the CPU is using frequently",
+            "answer0":"Memory temporarily stored in the hard drive",
+            "answer1":"Data stored in the hard drive",
+            "answer2":"Memory the computer is using"
+        },
+        11:{
+            "question":"What stores the BIOS?",
+            "correctAnswer":"ROM",
+            "answer0":"CPU",
+            "answer1":"RAM",
+            "answer2":"HDD"
         }
     },
     "T2":{
@@ -157,7 +206,15 @@ questions = {
             "answer0":"Sending and recieving websites securely",
             "answer1":"Sending and recieving files",
             "answer2":"Sending and recieving websites"
+        },
+        9:{
+            "question":"What is an IP Address used for?",
+            "correctAnswer":"Identifying a particular machine",
+            "answer0":"Encrypt data",
+            "answer1":"Establish a secure connection",
+            "answer2":"Send data to another device"
         }
+
     },
     "T4":{
         0:{
@@ -201,6 +258,20 @@ questions = {
             "answer0":"An email that tricks you into giving personal info",
             "answer1":"Direct observation of a user entering data",
             "answer2":"A virus software that infects the target computer"
+        },
+        6:{
+            "question":"Why do we encrypt data?",
+            "correctAnswer":"Protect data from unauthorised access",
+            "answer0":"Lower the file size",
+            "answer1":"Convert it so humans can read it",
+            "answer2":"Convert it so machines understand it"
+        },
+        7:{
+            "question":"Why should you backup data?",
+            "correctAnswer":"Restore data if something happens to it",
+            "answer0":"Improve performance",
+            "answer1":"Protect sensitive data from unauthorised access",
+            "answer2":"Monitor users on the system"
         }
     },
     "T5":{
