@@ -58,7 +58,7 @@ function answer(element){
         // answers.innerHTML = "Incorrect"
         alert("INCORRECT\nThe correct answer is: " + questions["T"+topic][questionNumber]["correctAnswer"])
         wrong += 1;
-        newQuestion()
+        setTimeout(function(){newQuestion()},1000)
     };
     scoreCorrect.innerHTML = "Correct: " + correct
     scoreWrong.innerHTML = "Incorrect: " + wrong
