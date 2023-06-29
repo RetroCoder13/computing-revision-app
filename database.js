@@ -10,6 +10,34 @@ async function load(){
         document.getElementById('scoreWrong').innerHTML = "Incorrect: " + data[0]['incorrect']
         correct = data[0]['correct']
         wrong = data[0]['incorrect']
+
+        xhttp = new XMLHttpRequest()
+        xhttp.open("GET","http://worldtimeapi.org/api/timezone/Europe/London",false)
+        await xhttp.send()
+        await xhttp.OPENED
+        currentDate = JSON.parse(xhttp.response)['datetime'].slice(0,10)
+
+        var { dataTime, error } = await supabaseClient
+            .from('fln_time')
+            .select()
+        
+        if(dataTime[0]['time'] != currentDate){
+            var { dataFLN, error } = await supabaseClient
+                .from('users')
+                .select()
+                .eq('username','Faulkner')
+            
+            var { data, error } = await supabaseClient
+                .from('users')
+                .update({correct:parseInt(dataFLN[0]['correct']) + 500, incorrect:parseInt(dataFLN[0]['incorrect'])})
+                .eq('username','Faulkner')
+            
+            var { data, error } = await supabaseClient
+                .from('fln_time')
+                .update({time:currentDate})
+                .eq('username','Faulkner')
+        }
+        
     } else {
         location.href = "./login"
     }
