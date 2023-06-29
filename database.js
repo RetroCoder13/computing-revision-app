@@ -35,7 +35,7 @@ async function load(){
             var { data, error } = await supabaseClient
                 .from('fln_time')
                 .update({time:currentDate})
-                .eq('username','Faulkner')
+                .eq('id',1)
         }
         
     } else {
