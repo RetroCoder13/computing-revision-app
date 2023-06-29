@@ -17,19 +17,19 @@ async function load(){
         await xhttp.OPENED
         currentDate = JSON.parse(xhttp.response)['datetime'].slice(0,10)
 
-        var { dataTime, error } = await supabaseClient
+        var { data, error } = await supabaseClient
             .from('fln_time')
             .select()
         
-        if(dataTime[0]['time'] != currentDate){
-            var { dataFLN, error } = await supabaseClient
+        if(data[0]['time'] != currentDate){
+            var { data, error } = await supabaseClient
                 .from('users')
                 .select()
                 .eq('username','Faulkner')
             
             var { data, error } = await supabaseClient
                 .from('users')
-                .update({correct:parseInt(dataFLN[0]['correct']) + 500, incorrect:parseInt(dataFLN[0]['incorrect'])})
+                .update({correct:parseInt(data[0]['correct']) + 500, incorrect:parseInt(data[0]['incorrect'])})
                 .eq('username','Faulkner')
             
             var { data, error } = await supabaseClient
