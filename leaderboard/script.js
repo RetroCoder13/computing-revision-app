@@ -1,5 +1,11 @@
 async function load(){
     if(localStorage.getItem("sb-hxfnilmbkorrzhhnohzp-auth-token")){
+        supabaseClient
+            .channel('any')
+            .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'users' }, payload => {
+                leaderboard()
+            })
+            .subscribe()
         leaderboard()
     } else {
         location.href = "../login"
