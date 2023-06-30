@@ -19,7 +19,6 @@ async function leaderboard(){
         .order('correct', {ascending: false})
         .order('incorrect', {ascending: true})
         .order('username')
-    username = data[0]['username']
 
     document.getElementById('leaderboard').innerHTML = "<tr><th></th><th>Username</th><th>Correct</th><th>Incorrect</th></tr>"
 
@@ -30,13 +29,7 @@ async function leaderboard(){
     }
 
 
-    var { data, error } = await supabaseClient
-        .from('users')
-        .select()
-        .order('incorrect', {ascending: false})
-        .order('correct', {ascending: true})
-        .order('username')
-    username = data[0]['username']
+    data = Object.values(data).map(value=>value).sort((a, b)=>b['incorrect']-a['incorrect'])
 
     document.getElementById('leaderboardIncorrect').innerHTML = "<tr><th></th><th>Username</th><th>Correct</th><th>Incorrect</th></tr>"
 
