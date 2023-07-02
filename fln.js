@@ -27,6 +27,4 @@ async function fln(){
     }
 }
 
-window.onload = function(){
-    fln()
-}
+fln()
