@@ -1,8 +1,5 @@
 window.onload=function(){
-    var request = new XMLHttpRequest()
-    request.open("GET","https://raw.githubusercontent.com/RetroCoder13/computing-revision-app/questions/questions.js",false);
-    request.send(null)
-    eval(request.responseText)
+    getQuestions()
 
     question = document.getElementById('question');
     answers = document.getElementById('answers');
@@ -66,3 +63,11 @@ function answer(element){
     scoreWrong.innerHTML = "Incorrect: " + wrong
     update()
 };
+
+async function getQuestions(){
+    var request = new XMLHttpRequest()
+    request.open("GET","https://raw.githubusercontent.com/RetroCoder13/computing-revision-app/questions/questions.js",false);
+    request.send()
+    await xhttp.OPENED
+    eval(request.responseText)
+}
