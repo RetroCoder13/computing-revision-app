@@ -41,4 +41,6 @@ async function signOut(){
     location.reload()
 }
 
-load()
+window.onload=function(){
+    load()
+}
