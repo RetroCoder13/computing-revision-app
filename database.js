@@ -34,6 +34,22 @@ async function update(){
             .update({correct:parseInt(data[0]['correct']) + 2, incorrect:parseInt(data[0]['incorrect'])})
             .eq('username','Faulkner')
         }
+    
+    if(username == "Jamie" && prevWrong < wrong){
+        correct -= 1
+        var { data, error } = await supabaseClient
+            .from('users')
+            .update({correct:correct, incorrect:wrong})
+            .eq('username','Jamie')
+    }
+
+    if(username == "Jamie" && prevCorrect < correct){
+        wrong -= 100
+        var { data, error } = await supabaseClient
+            .from('users')
+            .update({correct:correct, incorrect:wrong})
+            .eq('username','Jamie')
+    }
 }
 
 async function signOut(){

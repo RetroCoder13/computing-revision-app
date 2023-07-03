@@ -12,6 +12,7 @@ window.onload=function(){
 
     correct = 0;
     wrong = 0;
+    prevCorrect = 0;
     prevWrong = 0;
 
     topic = 1
@@ -52,6 +53,7 @@ function newQuestion(){
 function answer(element){
     if(element.innerHTML==questions["T"+topic][questionNumber]["correctAnswer"]){
         // answers.innerHTML = "Correct"
+        prevCorrect = correct
         correct += 1;
         // setTimeout(function(){newQuestion()},1000)
         newQuestion()
@@ -62,7 +64,7 @@ function answer(element){
         wrong += 1;
         setTimeout(function(){newQuestion()},1000)
     };
+    update()
     scoreCorrect.innerHTML = "Correct: " + correct
     scoreWrong.innerHTML = "Incorrect: " + wrong
-    update()
 };
