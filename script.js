@@ -51,16 +51,16 @@ function newQuestion(){
 }
 
 function answer(element){
+    prevCorrect = correct
+    prevWrong = wrong
     if(element.innerHTML==questions["T"+topic][questionNumber]["correctAnswer"]){
         // answers.innerHTML = "Correct"
-        prevCorrect = correct
         correct += 1;
         // setTimeout(function(){newQuestion()},1000)
         newQuestion()
     } else {
         // answers.innerHTML = "Incorrect"
         alert("INCORRECT\nThe correct answer is: " + questions["T"+topic][questionNumber]["correctAnswer"])
-        prevWrong = wrong;
         wrong += 1;
         setTimeout(function(){newQuestion()},1000)
     };
