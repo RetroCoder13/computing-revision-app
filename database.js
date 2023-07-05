@@ -11,6 +11,7 @@ async function load(){
         correct = data[0]['correct']
         wrong = data[0]['incorrect']
         prevWrong = wrong
+        prevCorrect = correct
     } else {
         location.href = "./login"
     }
@@ -39,7 +40,7 @@ async function update(){
         correct -= 1
         var { data, error } = await supabaseClient
             .from('users')
-            .update({correct:correct, incorrect:wrong})
+            .update({correct:correct})
             .eq('username','Jamie')
     }
 
@@ -47,7 +48,7 @@ async function update(){
         wrong -= 100
         var { data, error } = await supabaseClient
             .from('users')
-            .update({correct:correct, incorrect:wrong})
+            .update({incorrect:wrong})
             .eq('username','Jamie')
     }
 }
