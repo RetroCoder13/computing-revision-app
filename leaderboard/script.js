@@ -20,7 +20,7 @@ async function leaderboard(){
         .order('incorrect', {ascending: true})
         .order('username')
 
-    document.getElementById('leaderboard').innerHTML = "<tr><th></th><th>Username</th><th>Correct</th><th>Incorrect</th></tr>"
+    document.getElementById('leaderboard').innerHTML = "<tr><th id=\"ranking\"></th><th>Username</th><th>Correct</th><th>Incorrect</th></tr>"
 
     for(let i=0;i<data.length;i++){
         listElement = document.createElement("tr")
