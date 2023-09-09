@@ -12,6 +12,7 @@ window.onload=function(){
 
     correct = 0;
     wrong = 0;
+    prevCorrect = 0;
     prevWrong = 0;
 
     topic = 1
@@ -50,6 +51,8 @@ function newQuestion(){
 }
 
 function answer(element){
+    prevCorrect = correct
+    prevWrong = wrong
     if(element.innerHTML==questions["T"+topic][questionNumber]["correctAnswer"]){
         // answers.innerHTML = "Correct"
         correct += 1;
@@ -58,11 +61,10 @@ function answer(element){
     } else {
         // answers.innerHTML = "Incorrect"
         alert("INCORRECT\nThe correct answer is: " + questions["T"+topic][questionNumber]["correctAnswer"])
-        prevWrong = wrong;
         wrong += 1;
         setTimeout(function(){newQuestion()},1000)
     };
+    update()
     scoreCorrect.innerHTML = "Correct: " + correct
     scoreWrong.innerHTML = "Incorrect: " + wrong
-    update()
 };

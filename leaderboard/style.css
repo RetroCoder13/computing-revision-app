@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
 html{
     font-family: 'Rajdhani';
 }
@@ -10,4 +12,8 @@ td{
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-  }
+}
+
+th#ranking{
+    width: 30px;
+}
