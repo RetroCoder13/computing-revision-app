@@ -160,7 +160,7 @@ questions = {
         },
         2:{
             "question":"What does HTTP stand for?",
-            "correctAnswer":"Hyper Text Tranfer Protocol",
+            "correctAnswer":"Hyper Text Transfer Protocol",
             "answer0":"Holy Text Transfer Protocol",
             "answer1":"Hyper Text Training Protocol",
             "answer2":"Hyper Text Transmission Protocol"
