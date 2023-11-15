@@ -12,6 +12,7 @@ async function load(){
         wrong = data[0]['incorrect']
         prevWrong = wrong
         prevCorrect = correct
+        document.body.hidden = false
     } else {
         location.href = "./login"
     }
