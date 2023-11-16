@@ -15,10 +15,10 @@ window.onload=function(){
     prevCorrect = 0;
     prevWrong = 0;
 
-    topic = "CS1"
-    numberOfQuestions.innerHTML = Object.keys(questions[topic]).length + " Question(s) for this topic"
+    // topic = "CS1"
+    // numberOfQuestions.innerHTML = Object.keys(questions[topic]).length + " Question(s) for this topic"
 
-    newQuestion()
+    // newQuestion()
 };
 
 function changeTopic(){

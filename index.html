@@ -15,12 +15,35 @@
 <body hidden>
     <h1>Revision Multiple Choice Questions</h1>
     <select name="topic" id="topic" onchange="changeTopic()">
-        <option disabled>Computer Science</option>
-        <option value="CS1">&nbsp;&nbsp;Topic 1 - Systems Architecture</option>
-        <option value="CS2">&nbsp;&nbsp;Topic 2 - Data Representation</option>
-        <option value="CS3">&nbsp;&nbsp;Topic 3 - Wired and Wireless Networks</option>
-        <option value="CS4">&nbsp;&nbsp;Topic 4 - Systems Software and Security</option>
-        <option value="CS5">&nbsp;&nbsp;Topic 5 - Ethical</option>
+        <option hidden selected>Select Topic</option>
+        <optgroup label="Computer Science" id="option-subject">
+            <optgroup label="Paper 1" id="subject-indent">
+                <option value="CS1">Topic 1 - Systems Architecture</option>
+                <option value="CS2">Topic 2 - Data Representation</option>
+                <option value="CS3">Topic 3 - Wired and Wireless Networks</option>
+                <option value="CS4">Topic 4 - Systems Software and Security</option>
+                <option value="CS5">Topic 5 - Ethical</option>
+            </optgroup>
+        </optgroup>
+        <option disabled></option>
+        <optgroup label="Music" id="option-subject">
+            <optgroup label="Vocal Music" id="subject-indent">
+                <option value="MU1">Killer Queen</option>
+                <option value="MU2">Music for a While</option>
+            </optgroup>
+            <optgroup label="Music for Stage and Screen" id="subject-indent">
+                <option value="MU3">Star Wars</option>
+                <option value="MU4">Defying Gravity</option>
+            </optgroup>
+            <optgroup label="Fusions" id="subject-indent">
+                <option value="MU5">Release</option>
+                <option value="MU6">Samba Em Preludio</option>
+            </optgroup>
+            <optgroup label="Instrumental music 1700-1820" id="subject-indent">
+                <option value="MU7">Brandenburg Concerto No.5 in D Major</option>
+                <option value="MU8">Pathetique</option>
+            </optgroup>
+        </optgroup>
     </select>
     <p id="numberOfQuestions">Question</p>
     <br>
