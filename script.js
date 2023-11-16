@@ -1,6 +1,6 @@
 window.onload=function(){
     var request = new XMLHttpRequest()
-    request.open("GET","https://raw.githubusercontent.com/RetroCoder13/computing-revision-app/questions/questions.js",false);
+    request.open("GET","https://raw.githubusercontent.com/RetroCoder13/revision/questions/questions.js",false);
     request.send()
     eval(request.responseText)
 
