@@ -316,6 +316,28 @@ questions = {
             "answer0":"1988",
             "answer1":"1998",
             "answer2":"1990"
+        },
+        6:{
+            "question":"What is Proprietary Software?",
+            "correctAnswer":"Sold as a license to use it",
+            "answer0":"Free to use and modify",
+            "answer1":"Anyone can help fix bugs",
+            "answer2":"A company releases the software for anyone to change"
+        },
+        7:{
+            "question":"What is Excel and example of?",
+            "correctAnswer":"Proprietary software",
+            "answer0":"Free software",
+            "answer1":"Open Source software",
+            "answer2":"Closed Source software"
         }
     }
 }
+
+// :{
+//     "question":"",
+//     "correctAnswer":"",
+//     "answer0":"",
+//     "answer1":"",
+//     "answer2":""
+// }
