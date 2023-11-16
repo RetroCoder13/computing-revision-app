@@ -334,14 +334,23 @@ questions = {
     },
     "MU1":{
         0:{
-            "question":"What band made Killer Queen?",
-            "correctAnswer":"Queen",
-            "answer0":"AC/DC",
-            "answer1":"The Beatles",
-            "answer2":"Pink Floyd"
+            "question":"Who composed Brandenburg Concerto No.5?",
+            "correctAnswer":"Johann Sebastian Bach",
+            "answer0":"Henry Purcell",
+            "answer1":"George Frederic Handel",
+            "answer2":"Ludwig Van Beethoven"
         }
     },
     "MU2":{
+        0:{
+            "question":"Who composed Piano Sonata No.8?",
+            "correctAnswer":"Ludwig Van Beethoven",
+            "answer0":"Henry Purcell",
+            "answer1":"George Frederic Handel",
+            "answer2":"Johann Sebastian Bach"
+        }
+    },
+    "MU3":{
         0:{
             "question":"Who composed Music for a While?",
             "correctAnswer":"Henry Purcell",
@@ -350,16 +359,16 @@ questions = {
             "answer2":"George Frederic Handel"
         }
     },
-    "MU3":{
+    "MU4":{
         0:{
-            "question":"Who composed the music for Star Wars?",
-            "correctAnswer":"John Williams",
-            "answer0":"Hans Zimmer",
-            "answer1":"Alan Silvestri",
-            "answer2":"James Newton Howard"
+            "question":"What band made Killer Queen?",
+            "correctAnswer":"Queen",
+            "answer0":"AC/DC",
+            "answer1":"The Beatles",
+            "answer2":"Pink Floyd"
         }
     },
-    "MU4":{
+    "MU5":{
         0:{
             "question":"Who composed the music for Defying Gravity?",
             "correctAnswer":"Stephan Schwartz",
@@ -368,7 +377,16 @@ questions = {
             "answer2":"Stephen Sondheim"
         }
     },
-    "MU5":{
+    "MU6":{
+        0:{
+            "question":"Who composed the music for Star Wars?",
+            "correctAnswer":"John Williams",
+            "answer0":"Hans Zimmer",
+            "answer1":"Alan Silvestri",
+            "answer2":"James Newton Howard"
+        }
+    },
+    "MU7":{
         0:{
             "question":"Who made Release?",
             "correctAnswer":"Afro Celt Sound System",
@@ -377,31 +395,13 @@ questions = {
             "answer2":"Simon Emmerson"
         }
     },
-    "MU6":{
+    "MU8":{
         0:{
             "question":"Who created Samba Em Preludio?",
             "correctAnswer":"Esperanza Spalding",
             "answer0":"Afro Celt Sound System",
             "answer1":"Simon Emmerson",
             "answer2":"Sinead O'Connor"
-        }
-    },
-    "MU7":{
-        0:{
-            "question":"Who composed Brandenburg Concerto No.5 in D Major?",
-            "correctAnswer":"Johann Sebastian Bach",
-            "answer0":"Henry Purcell",
-            "answer1":"George Frederic Handel",
-            "answer2":"Ludwig Van Beethoven"
-        }
-    },
-    "MU8":{
-        0:{
-            "question":"Who composed Pathetique?",
-            "correctAnswer":"Ludwig Van Beethoven",
-            "answer0":"Henry Purcell",
-            "answer1":"George Frederic Handel",
-            "answer2":"Johann Sebastian Bach"
         }
     }
 }
