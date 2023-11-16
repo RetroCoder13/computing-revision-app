@@ -15,36 +15,36 @@ window.onload=function(){
     prevCorrect = 0;
     prevWrong = 0;
 
-    topic = 1
-    numberOfQuestions.innerHTML = Object.keys(questions["T"+topic]).length + " Question(s) for this topic<br>" + (Object.keys(questions["T1"]).length + Object.keys(questions["T2"]).length + Object.keys(questions["T3"]).length + Object.keys(questions["T4"]).length + Object.keys(questions["T5"]).length) + " total questions across all topics"
+    topic = "CS1"
+    numberOfQuestions.innerHTML = Object.keys(questions[topic]).length + " Question(s) for this topic<br>" + (Object.keys(questions["T1"]).length + Object.keys(questions["T2"]).length + Object.keys(questions["T3"]).length + Object.keys(questions["T4"]).length + Object.keys(questions["T5"]).length) + " total questions across all topics"
 
     newQuestion()
 };
 
 function changeTopic(){
-    topic = parseInt(document.getElementById('topic').value)
-    numberOfQuestions.innerHTML = Object.keys(questions["T"+topic]).length + " Question(s) for this topic<br>" + (Object.keys(questions["T1"]).length + Object.keys(questions["T2"]).length + Object.keys(questions["T3"]).length + Object.keys(questions["T4"]).length + Object.keys(questions["T5"]).length) + " total questions across all topics"
+    topic = document.getElementById('topic').value
+    numberOfQuestions.innerHTML = Object.keys(questions[topic]).length + " Question(s) for this topic"
 
     newQuestion()
 }
 
 function newQuestion(){
-    questionNumber = parseInt(Math.random()*(Object.keys(questions["T"+topic]).length));
+    questionNumber = parseInt(Math.random()*(Object.keys(questions[topic]).length));
 
     correctAnswerPosition = parseInt(Math.random()*4);
     correctAnswer = false;
 
-    question.innerHTML = questions["T"+topic][questionNumber]["question"]
+    question.innerHTML = questions[topic][questionNumber]["question"]
     answers.innerHTML = "";
     for(let i=0;i<4;i++){
         if(correctAnswerPosition==i){
-            answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions["T"+topic][questionNumber]["correctAnswer"]}</button><br>`
+            answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[topic][questionNumber]["correctAnswer"]}</button><br>`
             correctAnswer = true;
         } else {
             if(correctAnswer==true){
-                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions["T"+topic][questionNumber][`answer${i-1}`]}</button><br>`
+                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[topic][questionNumber][`answer${i-1}`]}</button><br>`
             } else {
-                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions["T"+topic][questionNumber][`answer${i}`]}</button><br>`
+                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[topic][questionNumber][`answer${i}`]}</button><br>`
             }
         };
     };
@@ -53,14 +53,14 @@ function newQuestion(){
 function answer(element){
     prevCorrect = correct
     prevWrong = wrong
-    if(element.innerHTML==questions["T"+topic][questionNumber]["correctAnswer"]){
+    if(element.innerHTML==questions[topic][questionNumber]["correctAnswer"]){
         // answers.innerHTML = "Correct"
         correct += 1;
         // setTimeout(function(){newQuestion()},1000)
         newQuestion()
     } else {
         // answers.innerHTML = "Incorrect"
-        alert("INCORRECT\nThe correct answer is: " + questions["T"+topic][questionNumber]["correctAnswer"])
+        alert("INCORRECT\nThe correct answer is: " + questions[topic][questionNumber]["correctAnswer"])
         wrong += 1;
         setTimeout(function(){newQuestion()},1000)
     };
