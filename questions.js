@@ -389,7 +389,7 @@ questions = {
     "MU7":{
         0:{
             "question":"Who composed Brandenburg Concerto No.5 in D Major?",
-            "correctAnswer":"Joahnn Sebastian bach",
+            "correctAnswer":"Joahnn Sebastian Bach",
             "answer0":"Henry Purcell",
             "answer1":"George Frederic Handel",
             "answer2":"Ludwig Van Beethoven"
