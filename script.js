@@ -16,7 +16,7 @@ window.onload=function(){
     prevWrong = 0;
 
     topic = "CS1"
-    numberOfQuestions.innerHTML = Object.keys(questions[topic]).length + " Question(s) for this topic<br>" + (Object.keys(questions["T1"]).length + Object.keys(questions["T2"]).length + Object.keys(questions["T3"]).length + Object.keys(questions["T4"]).length + Object.keys(questions["T5"]).length) + " total questions across all topics"
+    numberOfQuestions.innerHTML = Object.keys(questions[topic]).length + " Question(s) for this topic<br>"
 
     newQuestion()
 };
