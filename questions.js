@@ -1,5 +1,5 @@
 questions = {
-    "T1":{
+    "CS1":{
         0:{
             "question":"What does MAR stand for?",
             "correctAnswer":"Memory Address Register",
@@ -85,7 +85,7 @@ questions = {
             "answer2":"HDD"
         }
     },
-    "T2":{
+    "CS2":{
         0:{
             "question":"Which character set is the largest?",
             "correctAnswer":"Unicode",
@@ -143,7 +143,7 @@ questions = {
             "answer2":"203"
         }
     },
-    "T3":{
+    "CS3":{
         0:{
             "question":"What does IP stand for?",
             "correctAnswer":"Internet Protocol",
@@ -216,7 +216,7 @@ questions = {
         }
 
     },
-    "T4":{
+    "CS4":{
         0:{
             "question":"What does DoS stand for?",
             "correctAnswer":"Denial of Service",
@@ -274,7 +274,7 @@ questions = {
             "answer2":"Monitor users on the system"
         }
     },
-    "T5":{
+    "CS5":{
         0:{
             "question":"Which law is broken when logging onto someone elses computer without permission?",
             "correctAnswer":"Computer Misuse Act",
