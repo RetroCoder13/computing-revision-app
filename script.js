@@ -1,8 +1,8 @@
 window.onload=function(){
-    var request = new XMLHttpRequest()
-    request.open("GET","https://raw.githubusercontent.com/RetroCoder13/revision/questions/questions.js",false);
-    request.send()
-    eval(request.responseText)
+    // var request = new XMLHttpRequest()
+    // request.open("GET","https://raw.githubusercontent.com/RetroCoder13/revision/questions/questions.js",false);
+    // request.send()
+    // eval(request.responseText)
 
     question = document.getElementById('question');
     answers = document.getElementById('answers');
@@ -16,35 +16,41 @@ window.onload=function(){
     prevWrong = 0;
 
     // topic = "CS1"
-    // numberOfQuestions.innerHTML = Object.keys(questions[topic]).length + " Question(s) for this topic"
+    // numberOfQuestions.innerHTML = Object.keys(questions).length + " Question(s) for this topic"
 
     // newQuestion()
 };
 
 function changeTopic(){
     topic = document.getElementById('topic').value
-    numberOfQuestions.innerHTML = Object.keys(questions[topic]).length + " Question(s) for this topic"
+
+    var request = new XMLHttpRequest()
+    request.open("GET",`https://raw.githubusercontent.com/RetroCoder13/revision/questions/${topic.substring(0,2)}/${topic[2]}/questions.js`,false);
+    request.send()
+    eval(request.responseText)
+
+    numberOfQuestions.innerHTML = Object.keys(questions).length + " Question(s) for this topic"
 
     newQuestion()
 }
 
 function newQuestion(){
-    questionNumber = parseInt(Math.random()*(Object.keys(questions[topic]).length));
+    questionNumber = parseInt(Math.random()*(Object.keys(questions).length));
 
     correctAnswerPosition = parseInt(Math.random()*4);
     correctAnswer = false;
 
-    question.innerHTML = questions[topic][questionNumber]["question"]
+    question.innerHTML = questions[questionNumber]["question"]
     answers.innerHTML = "";
     for(let i=0;i<4;i++){
         if(correctAnswerPosition==i){
-            answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[topic][questionNumber]["correctAnswer"]}</button><br>`
+            answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[questionNumber]["correctAnswer"]}</button><br>`
             correctAnswer = true;
         } else {
             if(correctAnswer==true){
-                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[topic][questionNumber][`answer${i-1}`]}</button><br>`
+                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[questionNumber][`answer${i-1}`]}</button><br>`
             } else {
-                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[topic][questionNumber][`answer${i}`]}</button><br>`
+                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[questionNumber][`answer${i}`]}</button><br>`
             }
         };
     };
@@ -53,14 +59,14 @@ function newQuestion(){
 function answer(element){
     prevCorrect = correct
     prevWrong = wrong
-    if(element.innerHTML==questions[topic][questionNumber]["correctAnswer"]){
+    if(element.innerHTML==questions[questionNumber]["correctAnswer"]){
         // answers.innerHTML = "Correct"
         correct += 1;
         // setTimeout(function(){newQuestion()},1000)
         newQuestion()
     } else {
         // answers.innerHTML = "Incorrect"
-        alert("INCORRECT\nThe correct answer is: " + questions[topic][questionNumber]["correctAnswer"])
+        alert("INCORRECT\nThe correct answer is: " + questions[questionNumber]["correctAnswer"])
         wrong += 1;
         setTimeout(function(){newQuestion()},1000)
     };
