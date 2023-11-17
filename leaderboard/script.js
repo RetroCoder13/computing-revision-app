@@ -19,6 +19,7 @@ async function leaderboard(){
         .order('correct', {ascending: false})
         .order('incorrect', {ascending: true})
         .order('username')
+        .limit(50)
 
     document.getElementById('leaderboard').innerHTML = "<tr><th id=\"ranking\"></th><th>Username</th><th>Correct</th><th>Incorrect</th></tr>"
 
