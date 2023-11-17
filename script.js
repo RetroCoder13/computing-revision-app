@@ -21,13 +21,16 @@ window.onload=function(){
     // newQuestion()
 };
 
-function changeTopic(){
+async function changeTopic(){
+    document.getElementById('question').innerHTML = "Loading"
+    document.getElementById('answers').innerHTML = ""
+
     topic = document.getElementById('topic').value
 
     var request = new XMLHttpRequest()
     request.open("GET",`https://raw.githubusercontent.com/RetroCoder13/revision/questions/${topic.substring(0,2)}/${topic[2]}/questions.js`,false);
     request.send()
-    eval(request.responseText)
+    await eval(request.responseText)
 
     numberOfQuestions.innerHTML = Object.keys(questions).length + " Question(s) for this topic"
 
