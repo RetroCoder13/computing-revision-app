@@ -3,13 +3,13 @@ questions = [
         "question":"What is the function of a nucleus?",
         "correctAnswer":"Controlling the cell",
         "answer0":"Synthesizing proteins",
-        "answer1":"Storing water",
+        "answer1":"Strengthens the cell and supports the plant",
         "answer2":"Providing energy"
     },
     {
         "question":"What is the function of a mitochondria?",
         "correctAnswer":"Providing energy",
-        "answer0":"Storing water",
+        "answer0":"Strengthens the cell and supports the plant",
         "answer1":"Synthesizing proteins",
         "answer2":"Controlling the cell"
     },
@@ -17,14 +17,14 @@ questions = [
         "question":"What is the function of a ribosome?",
         "correctAnswer":"Synthesizing proteins",
         "answer0":"Providing energy",
-        "answer1":"Storing water",
+        "answer1":"Strengthens the cell and supports the plant",
         "answer2":"Controlling the cell"
     },
     {
         "question":"What is the function of the cell membrane?",
         "correctAnswer":"Controlling what can enter and exit the cell",
         "answer0":"Photosynthesis",
-        "answer1":"Storing water",
+        "answer1":"Strengthens the cell and supports the plant",
         "answer2":"Controlling the cell"
     },
     {
@@ -54,5 +54,19 @@ questions = [
         "answer0":"Nucleus",
         "answer1":"Mitochondria",
         "answer2":"Cytoplasm"
+    },
+    {
+        "question":"What cannot be found in an animal cell?",
+        "correctAnswer":"Cell Wall",
+        "answer0":"Nucleus",
+        "answer1":"Ribosome",
+        "answer2":"Mitochondria"
+    },
+    {
+        "question":"What is the function of the cell wall?",
+        "correctAnswer":"Strengthens the cell and supports the plant",
+        "answer0":"Controlling the cell",
+        "answer1":"Synthesizing proteins",
+        "answer2":"Controlling what can enter and exit the cell"
     }
 ]
