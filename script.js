@@ -21,9 +21,18 @@ window.onload=function(){
     // newQuestion()
 };
 
+async function pauseExecutionAsync(timeToWaitMilliseconds) {
+    return new Promise(resolve => {
+        window.setTimeout(() => {
+            resolve(null);
+        }, timeToWaitMilliseconds);
+    });
+}
+
 async function changeTopic(){
-    document.getElementById('question').innerHTML = "Loading"
-    document.getElementById('answers').innerHTML = ""
+    document.getElementById('loading').style.opacity = "1"
+
+    await pauseExecutionAsync(10)
 
     topic = document.getElementById('topic').value
 
@@ -35,6 +44,8 @@ async function changeTopic(){
     numberOfQuestions.innerHTML = Object.keys(questions).length + " Question(s) for this topic"
 
     newQuestion()
+
+    document.getElementById('loading').style.opacity = "0"
 }
 
 function newQuestion(){

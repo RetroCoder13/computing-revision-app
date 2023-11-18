@@ -90,3 +90,16 @@ button#leaderboard:hover{
     color: white;
     cursor: pointer;
 }
+
+#loading{
+    width: 20px;
+    position: relative;
+    top: 5px;
+    animation: spin 1s linear infinite;
+    opacity: 0;
+}
+
+@keyframes spin {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
