@@ -10,8 +10,8 @@
     <title>Revision | Login</title>
 </head>
 <body onkeypress="if(event.key=='Enter'){newUser()}">
-    <input type="email" placeholder="Email" id="email" autocomplete="email">
-    <input type="text" placeholder="Name (only needed for first login)" id="username" autocomplete="username">
+    <input type="email" placeholder="Email" id="email" autocomplete="username">
+    <input type="text" placeholder="Name (only needed for first login)" id="username">
     <input type="password" placeholder="Password" id="password" autocomplete="current-password">
     <button onclick="newUser()">Login</button>
     <p id="complete"></p>
