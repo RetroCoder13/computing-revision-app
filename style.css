@@ -49,7 +49,7 @@ h1#username{
 }
 
 button#signOut{
-    width: 150px;
+    width: 200px;
     height: 75px;
     position: relative;
     top: 30px;
@@ -71,7 +71,7 @@ button#signOut:hover{
 
 button#leaderboard{
     text-align: center;
-    width: 150px;
+    width: 200px;
     height: 75px;
     position: relative;
     top: 30px;
@@ -86,6 +86,27 @@ button#leaderboard{
 }
 
 button#leaderboard:hover{
+    background-color: #555555;
+    color: white;
+    cursor: pointer;
+}
+
+button#submitQuestion{
+    width: 200px;
+    height: 75px;
+    position: relative;
+    top: 30px;
+    right: 0px;
+    background-color: white;
+    border: 2px solid #555555;
+    border-radius: 10px;
+    padding: 16px 32px;
+    transition-duration: .1s;
+    font-family: 'Rajdhani';
+    font-size: 16px;
+}
+
+button#submitQuestion:hover{
     background-color: #555555;
     color: white;
     cursor: pointer;

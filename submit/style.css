@@ -1,0 +1,59 @@
+button{
+    width: 200px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%);
+    background-color: white;
+    border: 2px solid #555555;
+    border-radius: 10px;
+    padding: 16px 32px;
+    transition-duration: .1s;
+    font-family: 'Rajdhani';
+    font-size: 16px;
+}
+
+button#home{
+    position: relative;
+    left: 200px;
+}
+
+button:hover{
+    background-color: #555555;
+    color: white;
+    cursor: pointer;
+}
+
+input{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    transition-duration: .1s;
+    width: 350px;
+    background-color: white;
+    border: 2px solid #555555;
+    border-radius: 10px;
+    padding: 16px 32px;
+    font-family: 'Rajdhani';
+    font-size: 16px;
+}
+
+input:hover{
+    background-color: #555555;
+    color: white;
+}
+
+input::placeholder{
+    color: black;
+    transition-duration: .1s;
+}
+
+input:hover::placeholder{
+    color: white;
+}
+
+p{
+    font-family: 'Rajdhani';
+    text-align: center;
+}
