@@ -15,6 +15,7 @@ button{
     height: 100px;
     /* width: 1000px; */
     width: 70%;
+    color: black;
 }
 
 button:hover{
@@ -28,6 +29,7 @@ div#results label{
 
 select{
     font-family: 'Rajdhani';
+    color: black;
 }
 
 option{
