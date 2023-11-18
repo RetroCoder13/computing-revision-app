@@ -4,11 +4,11 @@ async function submit(){
     let questionData = username + "\n" + document.getElementById('subject').value + "\n" + document.getElementById('topic').value + "\n\n"
     for(let i=0;i<=questions;i++){
         questionData += ",\n{\n"
-        questionData += '"question": ' + '"' + document.getElementById("question" + i).value + '",\n'
-        questionData += '"correctAnswer": ' + '"' + document.getElementById("correct" + i).value + '",\n'
-        questionData += '"answer0": ' + '"' + document.getElementById("answer0" + i).value + '",\n'
-        questionData += '"answer1": ' + '"' + document.getElementById("answer1" + i).value + '",\n'
-        questionData += '"answer2": ' + '"' + document.getElementById("answer2" + i).value + '",\n'
+        questionData += '"    question": ' + '"' + document.getElementById("question" + i).value + '",\n'
+        questionData += '"    correctAnswer": ' + '"' + document.getElementById("correct" + i).value + '",\n'
+        questionData += '"    answer0": ' + '"' + document.getElementById("answer0" + i).value + '",\n'
+        questionData += '"    answer1": ' + '"' + document.getElementById("answer1" + i).value + '",\n'
+        questionData += '"    answer2": ' + '"' + document.getElementById("answer2" + i).value + '",\n'
         questionData += "}"
     }
 
