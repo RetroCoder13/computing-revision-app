@@ -36,16 +36,21 @@ async function changeTopic(){
 
     topic = document.getElementById('topic').value
 
-    var request = new XMLHttpRequest()
-    request.open("GET",`https://raw.githubusercontent.com/RetroCoder13/revision/questions/${topic.substring(0,2)}/${topic[2]}/questions.js`,false);
-    request.send()
-    await eval(request.responseText)
+    try {
+        var request = new XMLHttpRequest()
+        request.open("GET",`https://raw.githubusercontent.com/RetroCoder13/revision/questions/${topic.substring(0,2)}/${topic[2]}/questions.js`,false);
+        request.send()
+        await eval(request.responseText)
 
-    numberOfQuestions.innerHTML = Object.keys(questions).length + " Question(s) for this topic"
+        numberOfQuestions.innerHTML = Object.keys(questions).length + " Question(s) for this topic"
 
-    newQuestion()
+        newQuestion()
 
-    document.getElementById('loading').style.opacity = "0"
+        document.getElementById('loading').style.opacity = "0"
+    } catch {
+        question.innerHTML = "Failed to load questions. Check your Internet connection"
+        answers.innerHTML = ""
+    }
 }
 
 function newQuestion(){
