@@ -22,47 +22,47 @@
 
 ## English Literature (EN)
 ### Paper 1
-1 - Macbeth
+1 - Macbeth\
 2 - A Christmas Carol
 ### Paper 2
-3 - An Inspector Calls
+3 - An Inspector Calls\
 4 - War and Conflict Poetry
 
 ## Biology (BI)
 ### Paper 1
-1 - Cell Biology
-2 - Organisation
-3 - Infection and Response
+1 - Cell Biology\
+2 - Organisation\
+3 - Infection and Response\
 4 - Bioenergetics
 ### Paper 2
-5 - Homeostasis and Response
-6 - Inheritance, Variation and Evolution
+5 - Homeostasis and Response\
+6 - Inheritance, Variation and Evolution\
 7 - Ecology
 
 ## Chemistry (CH)
 ### Paper 1
-1 - Atomic Structure
-2 - Chemical Bonding
-3 - Quantitative Chemistry
-4 - Chemical Changes
+1 - Atomic Structure\
+2 - Chemical Bonding\
+3 - Quantitative Chemistry\
+4 - Chemical Changes\
 5 - Energy Changes
 ### Paper 2
-6 - The Rate and Extent of Chemical Change
-7 - Organic Chemistry
-8 - Chemical Analysis
-9 - Chemistry of the Atmosphere
+6 - The Rate and Extent of Chemical Change\
+7 - Organic Chemistry\
+8 - Chemical Analysis\
+9 - Chemistry of the Atmosphere\
 10 - Using Resources
 
 ## Physics (PH)
 ### Paper 1
-1 - Energy
-2 - Electricity
-3 - Particle Model of Matter
+1 - Energy\
+2 - Electricity\
+3 - Particle Model of Matter\
 4 - Atomic Structure
 ### Paper 2
-5 - Forces
-6 - Waves
-7 - Magnetism
+5 - Forces\
+6 - Waves\
+7 - Magnetism\
 8 - Space
 
 ## Computer Science (CS)
