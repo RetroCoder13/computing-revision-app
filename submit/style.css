@@ -44,12 +44,21 @@ input:hover{
     color: white;
 }
 
+input:focus{
+    background-color: #555555;
+    color: white;
+}
+
 input::placeholder{
     color: black;
     transition-duration: .1s;
 }
 
 input:hover::placeholder{
+    color: white;
+}
+
+input:focus::placeholder{
     color: white;
 }
 
