@@ -54,5 +54,19 @@ questions = [
         "answer0":"Free software",
         "answer1":"Open Source software",
         "answer2":"Closed Source software"
+    },
+    {
+        "question": "What law is broken by leaking client's information?",
+        "correctAnswer": "Data Protection Act",
+        "answer0": "Copyright, Designs and Patents Act",
+        "answer1": "Computer Misuse Act",
+        "answer2": "Freedom of Information Act",
+    },
+    {
+        "question": "What is not an example of breaking the Copyright, Designs and Patents Act?",
+        "correctAnswer": "Using copyrighted material with permission",
+        "answer0": "Making copies of copyrighted material",
+        "answer1": "Publishing copyrighted material",
+        "answer2": "Selling copyrighted material",
     }
 ]
