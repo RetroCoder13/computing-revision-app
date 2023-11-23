@@ -4,7 +4,7 @@ questions = [
         "correctAnswer":"Linear Search",
         "answer0":"Insertion Search",
         "answer1":"Bubble Search",
-        "answer2":"Binary Search"
+        "answer2":"Merge Search"
     },
     {
         "question":"Which is not a sorting algorithm?",
