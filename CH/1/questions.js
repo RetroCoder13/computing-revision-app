@@ -1,0 +1,72 @@
+questions = [
+    {
+        "question": "What is the mass of an electron?",
+        "correctAnswer": "Almost 0",
+        "answer0": "0",
+        "answer1": "1",
+        "answer2": "2",
+    },
+    {
+        "question": "What is the charge of a proton?",
+        "correctAnswer": "+1",
+        "answer0": "0",
+        "answer1": "-1",
+        "answer2": "+2",
+    },
+    {
+        "question": "What sub atomic particle do isotopes have different numbers of?",
+        "correctAnswer": "neutrons",
+        "answer0": "protons",
+        "answer1": "electrons",
+        "answer2": "nuclei",
+    },
+    {
+        "question": "Which best describes the plum pudding model?",
+        "correctAnswer": "A positive sphere with electrons embedded",
+        "answer0": "A positive sphere with lots of empty space",
+        "answer1": "A positive sphere with a nucleus in the middle",
+        "answer2": "A positive sphere with electron shells around it",
+    },
+    {
+        "question": "Which best describes an isotope?",
+        "correctAnswer": "Atoms of the same element with the same number of protons and different numbers of neutrons.",
+        "answer0": "Atoms of different elements with the same number of protons and different numbers of neutrons.",
+        "answer1": "Atoms of the same element with the same number of protons and neutrons.",
+        "answer2": "Atoms of the same element with the same number of protons but different numbers of electrons",
+    },
+    {
+        "question": "Which scientist discovered the neutrons?",
+        "correctAnswer": "James Chadwick",
+        "answer0": "Neils Bohr",
+        "answer1": "Ernest Rutherford",
+        "answer2": "John Dalton",
+    },
+    {
+        "question": "An atom has an atomic number of 13 and mass number of 27. How many protons, neutrons and electrons does it have?",
+        "correctAnswer": "Protons = 13 Electrons = 13 Neutrons = 14",
+        "answer0": "Protons = 13 Electrons = 13 Neutrons = 27",
+        "answer1": "Protons = 13 Electrons = 14 Neutrons = 27",
+        "answer2": "Protons = 13 Electrons = 14 Neutrons = 13",
+    },
+    {
+        "question": "Which part of the atom did the gold foil experiment help to discover?",
+        "correctAnswer": "The positive nucleus",
+        "answer0": "The electron shells",
+        "answer1": "The neutrons",
+        "answer2": "The electrons",
+    },
+    {
+        "question": "What is the correct electron configuration for a sulfur atom?",
+        "correctAnswer": "2,8,6",
+        "answer0": "8,8",
+        "answer1": "2,4,8,2",
+        "answer2": "2,8,8",
+    },
+    {
+        "question": "What is the electron configuration for an oxide ion?",
+        "correctAnswer": "2,8",
+        "answer0": "2,6",
+        "answer1": "2,7",
+        "answer2": "2,4",
+    }
+]
