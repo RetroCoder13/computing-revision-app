@@ -15,7 +15,7 @@ async function submit(){
     const { data, error } = await supabaseClient
         .storage
         .from('questions')
-        .upload(`${username + " " + document.getElementById('subject').value + " " + document.getElementById('topic').value + " " + new Date().getDate() + "-" + new Date().getMonth()+1 + "-" + new Date().getFullYear()}.txt`,questionData)
+        .upload(`${username + " " + document.getElementById('subject').value + " " + document.getElementById('topic').value + " " + new Date()}.txt`,questionData)
     
     document.getElementById('message').innerHTML = "Your question has been submitted for approval"
 }
