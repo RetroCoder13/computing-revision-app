@@ -32,7 +32,7 @@ letters = ""
 document.addEventListener('keydown',function(e){
     letters += e.key
     if(letters.includes("faulkner")){
-        alert("FAULKNER")
+        window.open("https://www.youtube.com/watch?v=eFjjO_lhf9c", "_blank").focus()
         letters = ""
     }
 })
