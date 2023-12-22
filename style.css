@@ -12,7 +12,7 @@ html{
 button{
     font-family: 'Rajdhani';
     font-size: 25px;
-    /* background: gray; */
+    background: gray;
     border-radius: 10px;
     border-color: darkgray;
     height: 100px;
