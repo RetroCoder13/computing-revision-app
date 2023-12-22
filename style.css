@@ -3,19 +3,22 @@
 html{
     font-family: 'Rajdhani';
     text-align: center;
-    color: black;
+    --mode-bg: #FFFFFF;
+    --mode-text: black;
+    color: var(--mode-text);
+    background-color: var(--mode-bg);
 }
 
 button{
     font-family: 'Rajdhani';
     font-size: 25px;
-    background: gray;
+    /* background: gray; */
     border-radius: 10px;
     border-color: darkgray;
     height: 100px;
     /* width: 1000px; */
     width: 70%;
-    color: black;
+    color: var(--mode-text);
 }
 
 button:hover{
@@ -29,11 +32,12 @@ div#results label{
 
 select{
     font-family: 'Rajdhani';
-    color: black;
+    color: var(--mode-text);
+    background-color: var(--mode-bg);
 }
 
 option{
-    color: black;
+    color: var(--mode-text);
     font-family: 'Rajdhani';
     text-align: start;
 }
@@ -57,7 +61,7 @@ button#signOut{
     position: relative;
     top: 30px;
     right: 0px;
-    background-color: white;
+    background-color: var(--mode-bg);
     border: 2px solid #555555;
     border-radius: 10px;
     padding: 16px 32px;
@@ -79,7 +83,7 @@ button#leaderboard{
     position: relative;
     top: 30px;
     right: 0px;
-    background-color: white;
+    background-color: var(--mode-bg);
     border: 2px solid #555555;
     border-radius: 10px;
     padding: 16px 32px;
@@ -100,7 +104,7 @@ button#submitQuestion{
     position: relative;
     top: 30px;
     right: 0px;
-    background-color: white;
+    background-color: var(--mode-bg);
     border: 2px solid #555555;
     border-radius: 10px;
     padding: 16px 32px;
@@ -126,4 +130,11 @@ button#submitQuestion:hover{
 @keyframes spin {
     from {rotate: 0deg;}
     to {rotate: 360deg;}
+}
+
+.darkMode{
+    position: absolute;
+    top: 10px;
+    right: 1%;
+    width: 30px;
 }

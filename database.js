@@ -58,7 +58,3 @@ async function signOut(){
     var { error } = await supabaseClient.auth.signOut()
     location.reload()
 }
-
-window.onload=function(){
-    load()
-}

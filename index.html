@@ -11,9 +11,11 @@
     <script src="./setup.js"></script>
     <script src="./database.js"></script>
     <script src="./fln.js"></script>
+    <script src="./mode.js"></script>
 </head>
 <body hidden>
     <h1>Revision Multiple Choice Questions</h1>
+    <img src="sun.png" class="darkMode" id="darkMode" onclick="changeMode()">
     <select name="topic" id="topic" onchange="changeTopic()">
         <option hidden selected>Select Topic</option>
         <optgroup label="Biology" id="option-subject">
