@@ -8,12 +8,15 @@
     <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Revision | Login</title>
+    <script src="../mode.js"></script>
 </head>
 <body onkeypress="if(event.key=='Enter'){newUser()}">
+    <img src="../sun.png" class="darkMode" id="darkMode" onclick="changeMode()">
     <input type="email" placeholder="Email" id="email" autocomplete="username">
     <input type="text" placeholder="Name (only needed for first login)" id="username">
     <input type="password" placeholder="Password" id="password" autocomplete="current-password">
     <button onclick="newUser()">Login</button>
     <p id="complete"></p>
+    <script>loadMode()</script>
 </body>
 </html>

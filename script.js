@@ -1,6 +1,5 @@
 window.onload=function(){
     load()
-    loadMode()
     // var request = new XMLHttpRequest()
     // request.open("GET","https://raw.githubusercontent.com/RetroCoder13/revision/questions/questions.js",false);
     // request.send()

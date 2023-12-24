@@ -8,8 +8,10 @@
     <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Revision | Submit a Question</title>
+    <script src="../mode.js"></script>
 </head>
 <body>
+    <img src="../sun.png" class="darkMode" id="darkMode" onclick="changeMode()">
     <button onclick="location.href = '../'" id="home">Home</button>
     <br>
     <input type="text" placeholder="Subject" id="subject">
@@ -30,5 +32,6 @@
     <button onclick="addQuestion(this)">Add Question</button>
     <button onclick="submit()">Submit</button>
     <p id="message"></p>
+    <script>loadMode()</script>
 </body>
 </html>

@@ -2,6 +2,11 @@
 
 html{
     font-family: 'Rajdhani';
+    /* text-align: center; */
+    --mode-bg: #FFFFFF;
+    --mode-text: black;
+    color: var(--mode-text);
+    background-color: var(--mode-bg);
 }
 
 td{
@@ -10,7 +15,8 @@ td{
 }
 
 table, th, td {
-    border: 1px solid black;
+    color: var(--mode-text);
+    border: 1px solid var(--mode-text);
     border-collapse: collapse;
 }
 
@@ -19,8 +25,9 @@ th#ranking{
 }
 
 button{
+    color: var(--mode-text);
     width: 200px;
-    background-color: white;
+    background-color: var(--mode-bg);
     border: 2px solid #555555;
     border-radius: 10px;
     padding: 16px 32px;
@@ -33,4 +40,11 @@ button:hover{
     background-color: #555555;
     color: white;
     cursor: pointer;
+}
+
+.darkMode{
+    position: absolute;
+    top: 10px;
+    right: 1%;
+    width: 30px;
 }

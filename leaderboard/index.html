@@ -9,10 +9,13 @@
     <script src="../setup.js"></script>
     <script src="./script.js"></script>
     <script src="../fln.js"></script>
+    <script src="../mode.js"></script>
 </head>
 <body>
+    <img src="../sun.png" class="darkMode" id="darkMode" onclick="changeMode()">
     <button id="back" onclick="location.href = '../'">Back</button>
     <h2>Leaderboard:</h2>
     <table id="leaderboard"></table>
+    <script>loadMode()</script>
 </body>
 </html>
