@@ -15,9 +15,9 @@ questions = [
     },
     {
         "question": "What is the error in the code? <br><code>area = length + height</code>",
-        "correctAnswer": "Logic Error - A<code>area</code> as the sum of <code>length</code> and <code>height</code>",
+        "correctAnswer": "Logic Error - <code>area</code> is the sum of <code>length</code> and <code>height</code>",
         "answer0": "Syntax Error - Expected indent",
-        "answer1": "Logic Error - A<code>area</code> as the product of <code>length</code> and <code>height</code>",
+        "answer1": "Logic Error - <code>area</code> is the product of <code>length</code> and <code>height</code>",
         "answer2": "Syntax Error - <code>area</code> is not defined",
     }
 ]
