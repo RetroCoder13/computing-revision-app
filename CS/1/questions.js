@@ -82,5 +82,12 @@ questions = [
         "answer0":"CPU",
         "answer1":"RAM",
         "answer2":"HDD"
+    },
+    {
+        "question":"What CPU architecture is used in modern computers?",
+        "correctAnswer":"Von Neumann Architecture",
+        "answer0":"Anthony Architecture",
+        "answer1":"Harvard Architecture",
+        "answer2":"Faulkner Architecture"
     }
 ]
