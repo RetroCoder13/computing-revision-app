@@ -4,7 +4,6 @@ async function load(){
             .from('users')
             .select()
             .eq('id',JSON.parse(localStorage.getItem("sb-hxfnilmbkorrzhhnohzp-auth-token"))["user"]["id"])
-        // console.log(data)
         document.getElementById('username').innerHTML = data[0]['username']
         document.getElementById('scoreCorrect').innerHTML = "Correct: " + data[0]['correct']
         document.getElementById('scoreWrong').innerHTML = "Incorrect: " + data[0]['incorrect']
@@ -14,7 +13,7 @@ async function load(){
         prevCorrect = correct
         document.body.hidden = false
     } else {
-        location.href = "./login"
+        location.href = "./auth/signin/"
     }
 }
 
