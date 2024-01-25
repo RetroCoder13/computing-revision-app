@@ -6,7 +6,7 @@ async function signIn(email,password){
         password: password,
     })
     if(error){
-        document.getElementById('error').innerHTML = "Incorrect username or password"
+        document.getElementById('error').innerHTML = "Incorrect email or password"
     } else {
         location.href="../../"
     }
