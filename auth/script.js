@@ -35,7 +35,7 @@ async function signUp(){
 
 async function forgotPassword(){
     const { data, error } = await supabaseClient.auth.resetPasswordForEmail(document.getElementById('email').value, {
-        redirectTo: 'https://retrocoder13.github.io/account/password',
+        redirectTo: 'https://retrocoder13.github.io/revision/account/password',
     })
     document.getElementById('error').innerHTML = "You have been sent an email to change your password"
 }
