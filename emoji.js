@@ -6,6 +6,7 @@ async function loadEmoji(){
     if(data[0]['emoji'] != ""){
         document.getElementById('accountIcon').src = "https://openmoji.org/data/color/svg/" + data[0]['emoji'] + ".svg"
         document.getElementById("accountIcon").style.filter = "invert(0)"
+        document.getElementById('emojiCode').placeholder = "Emoji Code: " + data[0]['emoji']
     }
 }
 
