@@ -7,16 +7,14 @@
     <script src="../../setup.js"></script>
     <script src="../script.js"></script>
     <link rel="stylesheet" href="../style.css">
-    <title>Revision | Login</title>
+    <title>Revision | Change Email</title>
     <script src="../../mode.js"></script>
 </head>
-<body onkeypress="if(event.key=='Enter'){signIn()}">
+<body onkeypress="if(event.key=='Enter'){changePassword()}">
     <img src="../../sun.svg" class="darkMode" id="darkMode" onclick="changeMode()">
-    <input type="email" placeholder="Email" id="email" autocomplete="email">
     <input type="password" placeholder="Password" id="password" autocomplete="current-password">
-    <button onclick="signIn()">Sign In</button>
-    <p>To create an account, click <a href="../signup/">here</a></p>
-    <p><a onclick="forgotPassword()">Forgot your password?</a></p>
+    <button onclick="changePassword()">Change Password</button>
+    <p><a href="../../">Home</a></p>
     <p id="error"></p>
     <script>loadMode()</script>
 </body>

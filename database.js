@@ -7,6 +7,8 @@ async function load(){
         document.getElementById('username').innerHTML = data[0]['username']
         document.getElementById('scoreCorrect').innerHTML = "Correct: " + data[0]['correct']
         document.getElementById('scoreWrong').innerHTML = "Incorrect: " + data[0]['incorrect']
+        document.getElementById('accountEmail').innerHTML = JSON.parse(localStorage.getItem("sb-hxfnilmbkorrzhhnohzp-auth-token"))["user"]["email"]
+        document.getElementById('accountUsername').innerHTML = data[0]['username']
         correct = data[0]['correct']
         wrong = data[0]['incorrect']
         prevWrong = wrong

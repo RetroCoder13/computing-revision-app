@@ -138,3 +138,58 @@ button#submitQuestion:hover{
     right: 1%;
     width: 30px;
 }
+
+.accountIcon{
+    position: absolute;
+    top: 10px;
+    left: 1%;
+    width: 30px;
+}
+
+.accountInfo{
+    position: absolute;
+    top: 50px;
+    left: -200px;
+    width: 200px;
+    height: calc(100% - 50px);
+    /* animation: pop-in 1s forwards; */
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto;
+    align-content: start;
+    border-top-right-radius: 10px;
+    background-color: rgb(75,75,75,0.95);
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+@keyframes pop-in {
+    to{left: 0px;}
+}
+
+@keyframes pop-out {
+    from{left: 0px;}
+    to{left: -200px;}
+}
+
+button.accountButton{
+    width: 180px;
+    height: 75px;
+    position: relative;
+    top: 30px;
+    right: 0px;
+    background-color: var(--mode-bg);
+    border: 2px solid #555555;
+    border-radius: 10px;
+    padding: 16px 32px;
+    transition-duration: .1s;
+    font-family: 'Rajdhani';
+    font-size: 16px;
+}
+
+button.accountButton:hover{
+    background-color: #555555;
+    color: white;
+    cursor: pointer;
+}

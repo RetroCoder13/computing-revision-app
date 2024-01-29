@@ -12,9 +12,20 @@
     <script src="./database.js"></script>
     <script src="./fln.js"></script>
     <script src="./mode.js"></script>
+    <script src="./account.js"></script>
 </head>
 <body hidden>
     <h1>Revision Multiple Choice Questions</h1>
+    <img src="account.svg" class="accountIcon" id="accountIcon" onclick="account()">
+
+    <div id="accountInfo" class="accountInfo">
+        <h2>Account</h1>
+        <p id="accountEmail"></p>
+        <p id="accountUsername"></p>
+        <button class="accountButton" onclick="location.href = './account/email'" hidden>Change Email</button>
+        <button class="accountButton" onclick="location.href = './account/password'">Change Password</button>
+    </div>
+
     <img src="sun.svg" class="darkMode" id="darkMode" onclick="changeMode()">
     <select name="topic" id="topic" onchange="changeTopic()">
         <option hidden selected>Select Topic</option>

@@ -12,12 +12,14 @@ function loadMode(){
         document.getElementById("darkMode").src = "https://retrocoder13.github.io/revision/sun.svg"
         document.getElementById("darkMode").style.filter = "invert(1)"
         document.getElementById("loading").style.filter = "invert(1)"
+        document.getElementById("accountIcon").style.filter = "invert(1)"
     } else {
         document.documentElement.style.setProperty("--mode-bg","#FFFFFF")
         document.documentElement.style.setProperty("--mode-text","black")
         document.getElementById("darkMode").src = "https://retrocoder13.github.io/revision/moon.svg"
         document.getElementById("darkMode").style.filter = "invert(0)"
         document.getElementById("loading").style.filter = "invert(0)"
+        document.getElementById("accountIcon").style.filter = "invert(0)"
     }
 }
 
@@ -29,6 +31,7 @@ function changeMode(){
         document.getElementById("darkMode").src = "https://retrocoder13.github.io/revision/moon.svg"
         document.getElementById("darkMode").style.filter = "invert(0)"
         document.getElementById("loading").style.filter = "invert(0)"
+        document.getElementById("accountIcon").style.filter = "invert(0)"
     } else {
         darkMode = true
         document.documentElement.style.setProperty("--mode-bg","#111111")
@@ -36,6 +39,7 @@ function changeMode(){
         document.getElementById("darkMode").src = "https://retrocoder13.github.io/revision/sun.svg"
         document.getElementById("darkMode").style.filter = "invert(1)"
         document.getElementById("loading").style.filter = "invert(1)"
+        document.getElementById("accountIcon").style.filter = "invert(1)"
     }
     localStorage["revision-darkMode"] = darkMode
 }
