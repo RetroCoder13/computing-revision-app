@@ -38,7 +38,7 @@ questions = [
         "question": "What is an example of a biotic factor?",
         "correctAnswer": "Disease",
         "answer0": "Rainfall",
-        "answer1": "Carbo Dioxide Concentration",
+        "answer1": "Carbon Dioxide Concentration",
         "answer2": "Light Intensity",
     },
     {
