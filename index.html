@@ -13,6 +13,7 @@
     <script src="./fln.js"></script>
     <script src="./mode.js"></script>
     <script src="./account.js"></script>
+    <script src="./emoji.js"></script>
 </head>
 <body hidden>
     <h1>Revision Multiple Choice Questions</h1>
@@ -22,6 +23,9 @@
         <h2>Account</h1>
         <p id="accountEmail"></p>
         <p id="accountUsername"></p>
+        <input type="text" name="emojiCode" id="emojiCode" placeholder="Emoji Code">
+        <button class="accountButton" onclick="changeEmoji()">Change Emoji</button>
+        <p><a href="https://openmoji.org/library/" style="position: relative; top: 30px;">Emoji Library</a></p>
         <button class="accountButton" onclick="location.href = './account/email'" hidden>Change Email</button>
         <button class="accountButton" onclick="location.href = './account/password'">Change Password</button>
     </div>

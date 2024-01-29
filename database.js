@@ -13,6 +13,7 @@ async function load(){
         wrong = data[0]['incorrect']
         prevWrong = wrong
         prevCorrect = correct
+        loadEmoji()
         document.body.hidden = false
     } else {
         location.href = "./auth/signin/"
@@ -24,7 +25,7 @@ async function update(){
     var { data, error } = await supabaseClient
         .from('users')
         .update({correct:correct, incorrect:wrong})
-        .eq('username',username)
+        .eq('id',JSON.parse(localStorage.getItem("sb-hxfnilmbkorrzhhnohzp-auth-token"))["user"]["id"])
     
     if(username == "Cassian" && prevWrong < wrong){
         var { data, error } = await supabaseClient
