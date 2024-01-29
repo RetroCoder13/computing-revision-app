@@ -3,10 +3,14 @@ async function loadEmoji(){
         .from('users')
         .select('emoji')
         .eq('id',JSON.parse(localStorage.getItem("sb-hxfnilmbkorrzhhnohzp-auth-token"))["user"]["id"])
-    if(data[i]['emoji'] != "" && data[i]['emoji'] != null){
+    if(data[0]['emoji'] != "" && data[0]['emoji'] != null){
         document.getElementById('accountIcon').src = "https://openmoji.org/data/color/svg/" + data[0]['emoji'] + ".svg"
         document.getElementById("accountIcon").style.filter = "invert(0)"
         document.getElementById('emojiCode').placeholder = "Emoji Code: " + data[0]['emoji']
+    } else {
+        document.getElementById('accountIcon').src = "account.svg"
+        document.getElementById('emojiCode').placeholder = "Emoji Code"
+        loadMode()
     }
 }
 
