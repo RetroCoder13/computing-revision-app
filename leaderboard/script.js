@@ -25,7 +25,11 @@ async function leaderboard(){
 
     for(let i=0;i<data.length;i++){
         listElement = document.createElement("tr")
-        listElement.innerHTML = `<td>${i + 1}</td><td>${data[i]['username']}</td><td>${data[i]['correct']}</td><td>${data[i]['incorrect']}</td>`
+        if(data[i]['emoji'] != "" && data[i]['emoji'] != null){
+            listElement.innerHTML = `<td>${i + 1}</td><td><img src="${"https://openmoji.org/data/color/svg/" + data[i]['emoji'] + ".svg"}" height="15"> ${data[i]['username']}</td><td>${data[i]['correct']}</td><td>${data[i]['incorrect']}</td>`
+        } else {
+            listElement.innerHTML = `<td>${i + 1}</td><td>${data[i]['username']}</td><td>${data[i]['correct']}</td><td>${data[i]['incorrect']}</td>`
+        }
         document.getElementById('leaderboard').appendChild(listElement)
     }
 }
