@@ -1,14 +1,18 @@
 async function signIn(email,password){
     email = document.getElementById('email').value
     password = document.getElementById('password').value
-    var { data, error } = await supabaseClient.auth.signInWithPassword({
-        email: email,
-        password: password,
-    })
-    if(error){
-        document.getElementById('error').innerHTML = "Incorrect email or password"
+    if(document.getElementById('otp').hidden == false){
+        signInWithOTP(email,document.getElementById('otp').value)
     } else {
-        location.href="../../"
+        var { data, error } = await supabaseClient.auth.signInWithPassword({
+            email: email,
+            password: password,
+        })
+        if(error){
+            document.getElementById('error').innerHTML = "Incorrect email or password"
+        } else {
+            location.href="../../"
+        }
     }
 }
 
@@ -38,4 +42,18 @@ async function forgotPassword(){
         redirectTo: 'https://retrocoder13.github.io/revision/account/password',
     })
     document.getElementById('error').innerHTML = "You have been sent an email to change your password"
+    document.getElementById('otp').hidden = false
+}
+
+async function signInWithOTP(email,token){
+    const { data: { session }, error } = await supabaseClient.auth.verifyOtp({
+        email: email,
+        token: token,
+        type: 'email',
+    })
+    if(error){
+        document.getElementById('error').innerHTML = "Incorrect token"
+    } else {
+        location.href="../../account/password"
+    }
 }

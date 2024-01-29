@@ -59,6 +59,10 @@ input#password{
     transform: translate(-50%,-100%);
 }
 
+input#otp{
+    transform: translate(-50%,10%);
+}
+
 button{
     width: 200px;
     position: absolute;
