@@ -1,0 +1,72 @@
+ questions = [
+    {
+        "question": "How was the early atmosphere formed?",
+        "correctAnswer": "Volcanoes releasing lots of gas",
+        "answer0": "Plants photosynthesise to produce Oxygen",
+        "answer1": "Animals respire and produce Carbon Dioxide",
+        "answer2": "Oceans produced lots of gas",
+    },
+    {
+        "question": "What was the early atmosphere mostly made of?",
+        "correctAnswer": "Carbon Dioxide",
+        "answer0": "Oxygen",
+        "answer1": "Ammonia",
+        "answer2": "Nitrogen",
+    },
+    {
+        "question": "What was not produced from volcanic activity?",
+        "correctAnswer": "Oxygen",
+        "answer0": "Water Vapour",
+        "answer1": "Nitrogen",
+        "answer2": "Methane",
+    },
+    {
+        "question": "How were the oceans formed?",
+        "correctAnswer": "Water Vapour in the atmosphere condensed",
+        "answer0": "Volcanoes produced liquid water",
+        "answer1": "Carbon Dioxide condensed",
+        "answer2": "Oxygen reacted with Carbon Dioxide",
+    },
+    {
+        "question": "How was lots Carbon Dioxide removed from the early atmosphere?",
+        "correctAnswer": "Dissolved in the oceans",
+        "answer0": "Condensed and formed oceans",
+        "answer1": "It wasn't removed",
+        "answer2": "Plants photosynthesise",
+    },
+    {
+        "question": "What is our atmosphere mostly made of?",
+        "correctAnswer": "Nitrogen",
+        "answer0": "Oxygen",
+        "answer1": "Water Vapour",
+        "answer2": "Carbon Dioxide",
+    },
+    {
+        "question": "What type of radiation comes from the sun and isn't absorbed by greenhouse gases?",
+        "correctAnswer": "Short wavelength",
+        "answer0": "Thermal radiation",
+        "answer1": "Long wavelength",
+        "answer2": "Infrared radiation",
+    },
+    {
+        "question": "What type of radiation is reflected off the Earth and absorbed by greenhouse gases",
+        "correctAnswer": "Long wavelength",
+        "answer0": "Short wavelength",
+        "answer1": "Infrared radiation",
+        "answer2": "Gamma radiation",
+    },
+    {
+        "question": "What form of human activity does not affect the amount of greenhouse gases in the atmosphere?",
+        "correctAnswer": "Breathing",
+        "answer0": "Burning fossil fuels",
+        "answer1": "Agriculture",
+        "answer2": "Deforestation",
+    },
+    {
+        "question": "What is not a consequence of climate change?",
+        "correctAnswer": "Nicer weather",
+        "answer0": "More natural disasters",
+        "answer1": "Reduction in biodiversity",
+        "answer2": "Rise in sea levels",
+    }
+]
