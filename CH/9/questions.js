@@ -68,5 +68,12 @@
         "answer0": "More natural disasters",
         "answer1": "Reduction in biodiversity",
         "answer2": "Rise in sea levels",
+    },
+    {
+        "question": "What is a Carbon Footprint?",
+        "correctAnswer": "A measure of the mount of Carbon Dioxide is released over  full cycle of something",
+        "answer0": "How much Carbon is released per step",
+        "answer1": "A footprint in the ground made of Carbon",
+        "answer2": "The amount of Carbon released by smoking",
     }
 ]
