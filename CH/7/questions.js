@@ -82,5 +82,33 @@ questions = [
         "answer0": "Solid precipitate formed",
         "answer1": "Stays orange",
         "answer2": "Gas Produced",
+    },
+    {
+        "question": "What alkane has the formula C₄H₁₀?",
+        "correctAnswer": "Butane",
+        "answer0": "Methane",
+        "answer1": "Propane",
+        "answer2": "Ethane",
+    },
+    {
+        "question": "What is crude oil?",
+        "correctAnswer": "A finite resource",
+        "answer0": "An infinite resource",
+        "answer1": "Jack's favourite drink",
+        "answer2": "A renewable resource",
+    },
+    {
+        "question": "What method could be used to crack a long-chain hydrocarbon",
+        "correctAnswer": "Mix the hydrocarbon vapour with steam and heat to a high temperature",
+        "answer0": "Using your hands to split it in half",
+        "answer1": "Mix the hydrocarbon with water and add a cold platinum catalyst",
+        "answer2": "Fractional Distilltion",
+    },
+    {
+        "question": "What is used to separate the components of crude oil?",
+        "correctAnswer": "Cracking",
+        "answer0": "Fractional Distillation",
+        "answer1": "Filtration",
+        "answer2": "Distillation",
     }
 ]
