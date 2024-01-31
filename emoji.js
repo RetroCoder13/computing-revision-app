@@ -16,7 +16,7 @@ async function loadEmoji(){
 
 async function changeEmoji(){
     username = document.getElementById('username').innerHTML
-    emojiCode = document.getElementById('emojiCode').value.strip()
+    emojiCode = document.getElementById('emojiCode').value.trim()
     if(!bannedEmojis.includes(emojiCode)){
         var { data, error } = await supabaseClient
             .from('users')
@@ -30,7 +30,7 @@ async function changeEmoji(){
 }
 
 const bannedEmojis = [
-    "1F595", // Middle finger
+    "1F595", // Middle fingers
     "1F346", // Eggplant
     "1F351", // Peach
     "1F352", // Cherries
