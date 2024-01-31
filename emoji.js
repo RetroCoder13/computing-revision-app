@@ -16,7 +16,7 @@ async function loadEmoji(){
 
 async function changeEmoji(){
     username = document.getElementById('username').innerHTML
-    emojiCode = document.getElementById('emojiCode').value
+    emojiCode = document.getElementById('emojiCode').value.strip()
     if(!bannedEmojis.includes(emojiCode)){
         var { data, error } = await supabaseClient
             .from('users')
