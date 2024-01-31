@@ -36,4 +36,5 @@ const bannedEmojis = [
     "1F352", // Cherries
     "1F64B", // Person raising hand
     "1F4A6", // Sweat droplets
+    "1F975", // Sweating face
 ]
