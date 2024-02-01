@@ -164,6 +164,11 @@ button#submitQuestion:hover{
     padding: 10px;
 }
 
+#accountEmail,#accountUsername{
+    width: 180px;
+    word-wrap: break-word;
+}
+
 @keyframes pop-in {
     to{left: 0px;}
 }
