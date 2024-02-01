@@ -26,5 +26,12 @@ questions = [
       "answer0": "Polymer chains entwined together with weak forces",
       "answer1": "A material embedded with another",
       "answer2": "Non-metal solids with high melting points",
+  },
+  {
+      "question": "What is corrosion?",
+      "correctAnswer": "Metals react with substances in their environment and are gradually destroyed",
+      "answer0": "When metals float in the water",
+      "answer1": "When particles move faster in their environment and are destroyed",
+      "answer2": "When you extract pure substances from an ore",
   }
 ]
