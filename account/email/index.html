@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../icon.svg" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../../setup.js"></script>
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Revision | Change Email</title>
+    <script src="../../mode.js"></script>
+</head>
+<body onkeypress="if(event.key=='Enter'){changeEmail()}">
+    <img src="../../sun.svg" class="darkMode" id="darkMode" onclick="changeMode()">
+    <input type="email" placeholder="Email" id="email" autocomplete="email">
+    <button onclick="changeEmail()">Change Email</button>
+    <p><a href="../../">Home</a></p>
+    <p id="error"></p>
+    <script>loadMode()</script>
+</body>
+</html>
