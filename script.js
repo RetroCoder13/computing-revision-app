@@ -64,13 +64,13 @@ function newQuestion(){
     answers.innerHTML = "";
     for(let i=0;i<4;i++){
         if(correctAnswerPosition==i){
-            answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[questionNumber]["correctAnswer"]}</button><br>`
+            answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[questionNumber]["correctAnswer"]}</button><br><br>`
             correctAnswer = true;
         } else {
             if(correctAnswer==true){
-                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[questionNumber][`answer${i-1}`]}</button><br>`
+                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[questionNumber][`answer${i-1}`]}</button><br><br>`
             } else {
-                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[questionNumber][`answer${i}`]}</button><br>`
+                answers.innerHTML += `<button onmousemove="gradient(this,event)" onmouseout="removeGradient(this)" onclick=\"answer(this)\">${questions[questionNumber][`answer${i}`]}</button><br><br>`
             }
         };
     };
