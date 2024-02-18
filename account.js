@@ -42,7 +42,7 @@ function showColourPopUp(){
         document.getElementById('accountColour').hidden = true
         document.getElementById('accountColour').innerHTML = `
         <img src="close.svg" id="accountColourImage" onclick="showColourPopUp()">
-        <input type="color" name="colour" id="accountColourInput">
+        <input type="color" name="colour" id="accountColourInput" value="#ffffff">
         <button id="accountColourButton" onclick="userColour()">Set Colour</button>
         `
         colourPopUp = false
