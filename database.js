@@ -5,12 +5,18 @@ async function load(){
             .select()
             .eq('id',JSON.parse(localStorage.getItem("sb-hxfnilmbkorrzhhnohzp-auth-token"))["user"]["id"])
         document.getElementById('username').innerHTML = data[0]['username']
+        if(data[0]['colour']){
+            document.getElementById('username').style.color = data[0]['colour']
+        }
         document.getElementById('scoreCorrect').innerHTML = "Correct: " + data[0]['correct']
         document.getElementById('scoreWrong').innerHTML = "Incorrect: " + data[0]['incorrect']
         document.getElementById('accountEmail').innerHTML = JSON.parse(localStorage.getItem("sb-hxfnilmbkorrzhhnohzp-auth-token"))["user"]["email"]
         document.getElementById('accountUsername').innerHTML = data[0]['username']
         correct = data[0]['correct']
         wrong = data[0]['incorrect']
+        if(correct >= 1000){
+            
+        }
         prevWrong = wrong
         prevCorrect = correct
         loadEmoji()
@@ -21,7 +27,6 @@ async function load(){
 }
 
 async function update(){
-    username = document.getElementById('username').innerHTML
     var { data, error } = await supabaseClient
         .from('users')
         .update({correct:correct, incorrect:wrong})

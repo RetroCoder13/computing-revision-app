@@ -199,3 +199,59 @@ button.accountButton:hover{
     color: white;
     cursor: pointer;
 }
+
+div#accountColour{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(75,75,75,0.95);
+    width: 200px;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+button#accountColourButton{
+    width: 200px;
+    height: 75px;
+    background-color: var(--mode-bg);
+    border: 2px solid #555555;
+    border-radius: 10px;
+    padding: 16px 32px;
+    transition-duration: .1s;
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+
+button#accountColourButton:hover{
+    background-color: #555555;
+    color: white;
+    cursor: pointer;
+}
+
+input#accountColourInput{
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+    width: 200px;
+    height: 50px;
+}
+
+input#accountColourInput:hover{
+    cursor: pointer;
+}
+
+img#accountColourImage{
+    width: 30px;
+    position: relative;
+    top: -20px;
+    right: -110px;
+}
+
+img#accountColourImage:hover{
+    cursor: pointer;
+}
+
+#username:hover{
+    cursor: pointer;
+}
