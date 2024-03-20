@@ -32,7 +32,7 @@ async function update(){
         .update({correct:correct, incorrect:wrong})
         .eq('id',JSON.parse(localStorage.getItem("sb-hxfnilmbkorrzhhnohzp-auth-token"))["user"]["id"])
     
-    if(username == "Cassian" && prevWrong < wrong){
+    if(username.innerHTML == "Cassian" && prevWrong < wrong){
         var { data, error } = await supabaseClient
             .from('users')
             .select()
@@ -43,8 +43,8 @@ async function update(){
             .update({correct:parseInt(data[0]['correct']) + 2, incorrect:parseInt(data[0]['incorrect'])})
             .eq('username','Faulkner')
         }
-    
-    if(username == "Jamie" && prevWrong < wrong){
+
+    if(username.innerHTML == "Jamie" && prevWrong < wrong){
         correct -= 1
         var { data, error } = await supabaseClient
             .from('users')
@@ -52,7 +52,7 @@ async function update(){
             .eq('id',JSON.parse(localStorage.getItem("sb-hxfnilmbkorrzhhnohzp-auth-token"))["user"]["id"])
     }
 
-    if(username == "Jamie" && prevCorrect < correct){
+    if(username.innerHTML == "Jamie" && prevCorrect < correct){
         wrong -= 100
         var { data, error } = await supabaseClient
             .from('users')
