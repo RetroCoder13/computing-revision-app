@@ -43,10 +43,10 @@ questions = [
     },
     {
         "question": "What is the recapitulation?",
-        "correctAnswer": "The final section",
-        "answer0": "The second section",
-        "answer1": "The first section",
-        "answer2": "The subjects",
+        "correctAnswer": "The final section of a sonata",
+        "answer0": "The second section of a sonata",
+        "answer1": "The first section of a sonata",
+        "answer2": "The subjects within the exposition",
     },
     {
         "question":"What is the first theme of the exposition called?",
