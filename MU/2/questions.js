@@ -68,5 +68,33 @@ questions = [
         "answer0":"Binary",
         "answer1":"Ternary",
         "answer2":"Arch form"
+    },
+    {
+        "question":"What happens between the 1st and 2nd subject in the exposition?",
+        "correctAnswer":"Transition",
+        "answer0":"Development",
+        "answer1":"Modulation",
+        "answer2":"Recapitulation"
+    },
+    {
+        "question":"What is the recapitulation?",
+        "correctAnswer":"A recap of the exposition",
+        "answer0":"A recap of the development",
+        "answer1":"A recap of the slow introduction",
+        "answer2":"A new section with new themes"
+    },
+    {
+        "question":"What key is transitioned to in the recapitulation that we expected in the exposition?",
+        "correctAnswer":"Eb major",
+        "answer0":"C major",
+        "answer1":"C minor",
+        "answer2":"Eb minor"
+    },
+    {
+        "question":"What key is transitioned to in the exposition that we do not expect?",
+        "correctAnswer":"Eb minor",
+        "answer0":"C minor",
+        "answer1":"Eb major",
+        "answer2":"C major"
     }
 ]
