@@ -14,7 +14,7 @@ questions = [
         "answer2": "C major",
     },
     {
-        "question": "How section does the piece begin with?",
+        "question": "What section does the piece begin with?",
         "correctAnswer": "Slow introduction",
         "answer0": "Exposition",
         "answer1": "Forte",
