@@ -14,7 +14,7 @@ questions = [
         "answer2": "C major",
     },
     {
-        "question": "How does the sonata begin?",
+        "question": "How does the piece begin which is unusual to a normal sonata?",
         "correctAnswer": "Slow introduction",
         "answer0": "Exposition",
         "answer1": "Forte",
@@ -47,5 +47,26 @@ questions = [
         "answer0": "The second section",
         "answer1": "The first section",
         "answer2": "The subjects",
+    },
+    {
+        "question":"What is the first theme of the exposition called?",
+        "correctAnswer":"First Subject",
+        "answer0":"Recapitulation",
+        "answer1":"Introduction",
+        "answer2":"First Exposition"
+    },
+    {
+        "question":"What is the name of the middle section of a sonata?",
+        "correctAnswer":"Development",
+        "answer0":"Exposition",
+        "answer1":"Slow introduction",
+        "answer2":"Recapitulation"
+    },
+    {
+        "question":"What structure is the piece?",
+        "correctAnswer":"Sonata form",
+        "answer0":"Binary",
+        "answer1":"Ternary",
+        "answer2":"Arch form"
     }
 ]
