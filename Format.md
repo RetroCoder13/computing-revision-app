@@ -1,5 +1,5 @@
 ### Questions need to be formatted like this:
-QuestionID:{
+{
     "question":"QUESTION",
     "correctAnswer":"CorrectANSWER",
     "answer0":"WrongANSWER",
@@ -8,7 +8,8 @@ QuestionID:{
 }
 
 ### Blank Question:
-:{
+,
+{
     "question":"",
     "correctAnswer":"",
     "answer0":"",
