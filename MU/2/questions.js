@@ -14,7 +14,7 @@ questions = [
         "answer2": "C major",
     },
     {
-        "question": "How does the piece begin which is unusual to a normal sonata?",
+        "question": "How section does the piece begin with?",
         "correctAnswer": "Slow introduction",
         "answer0": "Exposition",
         "answer1": "Forte",
@@ -96,5 +96,26 @@ questions = [
         "answer0":"C minor",
         "answer1":"Eb major",
         "answer2":"C major"
+    },
+    {
+        "question":"What section does the piece end with?",
+        "correctAnswer":"Coda",
+        "answer0":"Exposition",
+        "answer1":"Development",
+        "answer2":"Recapitulation"
+    },
+    {
+        "question":"How does the piece end?",
+        "correctAnswer":"Perfect cadence",
+        "answer0":"Ascending sequence",
+        "answer1":"Descending sequence",
+        "answer2":"Imperfect cadence"
+    },
+    {
+        "question":"How does each section within the piece end?",
+        "correctAnswer":"Perfect cadence",
+        "answer0":"Imperfect cadence",
+        "answer1":"Ascending sequence",
+        "answer2":"Descending sequence"
     }
 ]
