@@ -19,5 +19,12 @@ questions = [
         "answer0":"Binary",
         "answer1":"Arch Form",
         "answer2":"Sonata"
+    },
+    {
+        "question":"How does the solo flute and violin begin?",
+        "correctAnswer":"Two Part Imitation",
+        "answer0":"Stretto",
+        "answer1":"Sonata form",
+        "answer2":"Ornamentation"
     }
 ]
