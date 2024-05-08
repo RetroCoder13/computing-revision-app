@@ -85,5 +85,8 @@ function createPercentageList(data, value){
 }
 
 function calculatePercentage(data){
-    return `${data.split("1").length-1}%`
+    if(data != null){
+        return `${data.split("1").length-1}%`
+    }
+    return "0%"
 }
