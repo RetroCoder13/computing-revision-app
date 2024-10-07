@@ -35,167 +35,187 @@
     <img src="sun.svg" class="darkMode" id="darkMode" onclick="changeMode()">
     <select name="topic" id="topic" onchange="changeTopic()">
         <option hidden selected>Select Topic</option>
-        <optgroup label="Biology" id="option-subject">
-            <optgroup label="Paper 1" id="subject-indent">
-                <option value="GCSE/BI/1">Cell Biology</option>
-                <option value="GCSE/BI/2">Organisation</option>
-                <option value="GCSE/BI/3">Infection and Response</option>
-                <option value="GCSE/BI/4">Bioenergetics</option>
+        <optgroup label="A Level">
+            <optgroup label="Computer Science" id="option-subject">
+                <optgroup label="Paper" id="subject-indent">
+                    <option value="ALEVEL/CS/1">Components of a Computer and their Uses</option>
+                    <option value="ALEVEL/CS/2" disabled>Systems Software</option>
+                    <option value="ALEVEL/CS/3" disabled>Software Development</option>
+                    <option value="ALEVEL/CS/4" disabled>Exchanging Data</option>
+                    <option value="ALEVEL/CS/5" disabled>Networks and Web Technologies</option>
+                    <option value="ALEVEL/CS/6" disabled>Data Types</option>
+                    <option value="ALEVEL/CS/7" disabled>Data Structures</option>
+                    <option value="ALEVEL/CS/8" disabled>Legal, Moral, Ethical and Cultural Issues</option>
+                </optgroup>
             </optgroup>
-            <optgroup label="Paper 2" id="subject-indent">
-                <option value="GCSE/BI/5">Homeostasis and Response</option>
-                <option value="GCSE/BI/6">Inheritance, Variation and Evolution</option>
-                <option value="GCSE/BI/7">Ecology</option>
-            </optgroup>
+            <optgroup></optgroup>
         </optgroup>
+
         <optgroup></optgroup>
 
-        <optgroup label="Chemistry" id="option-subject">
-            <optgroup label="Paper 1" id="subject-indent">
-                <option value="GCSE/CH/1">Atomic Structure</option>
-                <option value="GCSE/CH/2" disabled>Chemical Bonding</option>
-                <option value="GCSE/CH/3" disabled>Quantitative Chemistry</option>
-                <option value="GCSE/CH/4" disabled>Chemical Changes</option>
-                <option value="GCSE/CH/5" disabled>Energy Changes</option>
+        <optgroup label="GCSE">
+            <optgroup label="Biology" id="option-subject">
+                <optgroup label="Paper 1" id="subject-indent">
+                    <option value="GCSE/BI/1">Cell Biology</option>
+                    <option value="GCSE/BI/2">Organisation</option>
+                    <option value="GCSE/BI/3">Infection and Response</option>
+                    <option value="GCSE/BI/4">Bioenergetics</option>
+                </optgroup>
+                <optgroup label="Paper 2" id="subject-indent">
+                    <option value="GCSE/BI/5">Homeostasis and Response</option>
+                    <option value="GCSE/BI/6">Inheritance, Variation and Evolution</option>
+                    <option value="GCSE/BI/7">Ecology</option>
+                </optgroup>
             </optgroup>
-            <optgroup label="Paper 2" id="subject-indent">
-                <option value="GCSE/CH/6" disabled>The Rate and Extent of Chemical Change</option>
-                <option value="GCSE/CH/7">Organic Chemistry</option>
-                <option value="GCSE/CH/8" disabled>Chemical Analysis</option>
-                <option value="GCSE/CH/9">Chemistry of the Atmosphere</option>
-                <option value="GCSE/CH/10">Using Resources</option>
-            </optgroup>
-        </optgroup>
-        <optgroup></optgroup>
+            <optgroup></optgroup>
 
-        <optgroup label="Physics" id="option-subject">
-            <optgroup label="Paper 1" id="subject-indent">
-                <option value="GCSE/PH/1" disabled>Energy</option>
-                <option value="GCSE/PH/2">Electricity</option>
-                <option value="GCSE/PH/3">Particle Model of Matter</option>
-                <option value="GCSE/PH/4">Radioactivity</option>
+            <optgroup label="Chemistry" id="option-subject">
+                <optgroup label="Paper 1" id="subject-indent">
+                    <option value="GCSE/CH/1">Atomic Structure</option>
+                    <option value="GCSE/CH/2" disabled>Chemical Bonding</option>
+                    <option value="GCSE/CH/3" disabled>Quantitative Chemistry</option>
+                    <option value="GCSE/CH/4" disabled>Chemical Changes</option>
+                    <option value="GCSE/CH/5" disabled>Energy Changes</option>
+                </optgroup>
+                <optgroup label="Paper 2" id="subject-indent">
+                    <option value="GCSE/CH/6" disabled>The Rate and Extent of Chemical Change</option>
+                    <option value="GCSE/CH/7">Organic Chemistry</option>
+                    <option value="GCSE/CH/8" disabled>Chemical Analysis</option>
+                    <option value="GCSE/CH/9">Chemistry of the Atmosphere</option>
+                    <option value="GCSE/CH/10">Using Resources</option>
+                </optgroup>
             </optgroup>
-            <optgroup label="Paper 2" id="subject-indent">
-                <option value="GCSE/PH/5">Forces</option>
-                <option value="GCSE/PH/6" disabled>Waves</option>
-                <option value="GCSE/PH/7" disabled>Magnetism</option>
-                <option value="GCSE/PH/8" disabled>Space</option>
-            </optgroup>
-        </optgroup>
-        <optgroup></optgroup>
+            <optgroup></optgroup>
 
-        <optgroup label="English Literature" id="option-subject">
-            <optgroup label="Paper 1" id="subject-indent">
-                <option value="GCSE/EN/1" disabled>Macbeth</option>
-                <option value="GCSE/EN/2" disabled>A Christmas Carol</option>
+            <optgroup label="Physics" id="option-subject">
+                <optgroup label="Paper 1" id="subject-indent">
+                    <option value="GCSE/PH/1" disabled>Energy</option>
+                    <option value="GCSE/PH/2">Electricity</option>
+                    <option value="GCSE/PH/3">Particle Model of Matter</option>
+                    <option value="GCSE/PH/4">Radioactivity</option>
+                </optgroup>
+                <optgroup label="Paper 2" id="subject-indent">
+                    <option value="GCSE/PH/5">Forces</option>
+                    <option value="GCSE/PH/6" disabled>Waves</option>
+                    <option value="GCSE/PH/7" disabled>Magnetism</option>
+                    <option value="GCSE/PH/8" disabled>Space</option>
+                </optgroup>
             </optgroup>
-            <optgroup label="Paper 2" id="subject-indent">
-                <option value="GCSE/EN/5" disabled>An Inspector Calls</option>
-                <option value="GCSE/EN/6" disabled>War and Conflict Poetry</option>
-            </optgroup>
-        </optgroup>
-        <optgroup></optgroup>
+            <optgroup></optgroup>
 
-        <optgroup label="Digital Information Technology" id="option-subject">
-            <optgroup label="Exam" id="subject-indent">
-                <option value="GCSE/IT/1" disabled>Modern Technologies</option>
-                <option value="GCSE/IT/2" disabled>Threats to Data</option>
-                <option value="GCSE/IT/3" disabled>Legal and Ethical</option>
-                <option value="GCSE/IT/4" disabled>Diagrams</option>
+            <optgroup label="English Literature" id="option-subject">
+                <optgroup label="Paper 1" id="subject-indent">
+                    <option value="GCSE/EN/1" disabled>Macbeth</option>
+                    <option value="GCSE/EN/2" disabled>A Christmas Carol</option>
+                </optgroup>
+                <optgroup label="Paper 2" id="subject-indent">
+                    <option value="GCSE/EN/5" disabled>An Inspector Calls</option>
+                    <option value="GCSE/EN/6" disabled>War and Conflict Poetry</option>
+                </optgroup>
             </optgroup>
-        </optgroup>
-        <optgroup></optgroup>
+            <optgroup></optgroup>
 
-        <optgroup label="Computer Science" id="option-subject">
-            <optgroup label="Paper 1" id="subject-indent">
-                <option value="GCSE/CS/1">Systems Architecture</option>
-                <option value="GCSE/CS/2">Data Representation</option>
-                <option value="GCSE/CS/3">Wired and Wireless Networks</option>
-                <option value="GCSE/CS/4">Systems Software and Security</option>
-                <option value="GCSE/CS/5">Ethical</option>
+            <optgroup label="Digital Information Technology" id="option-subject">
+                <optgroup label="Exam" id="subject-indent">
+                    <option value="GCSE/IT/1" disabled>Modern Technologies</option>
+                    <option value="GCSE/IT/2" disabled>Threats to Data</option>
+                    <option value="GCSE/IT/3" disabled>Legal and Ethical</option>
+                    <option value="GCSE/IT/4" disabled>Diagrams</option>
+                </optgroup>
             </optgroup>
-            <optgroup label="Paper 2" id="subject-indent">
-                <option value="GCSE/CS/6">Algorithms</option>
-                <option value="GCSE/CS/7">Programming Fundamentals</option>
-                <option value="GCSE/CS/8">Producing Robust Programs</option>
-                <option value="GCSE/CS/9" disabled>Logic and Languages</option>
-                <option value="GCSE/CS/10" disabled>Programming Skills</option>
-            </optgroup>
-        </optgroup>
-        <optgroup></optgroup>
+            <optgroup></optgroup>
 
-        <optgroup label="Design and Technology" id="option-subject">
-            <optgroup label="Exam" id="subject-indent">
-                <option value="GCSE/DT/1" disabled>Exploring the context of a design solution</option>
-                <option value="GCSE/DT/2" disabled>Usability</option>
-                <option value="GCSE/DT/3" disabled>Opportunities and constraints that influence design and making</option>
-                <option value="GCSE/DT/4" disabled>Developments in technology and their influence on design decisions and practice</option>
-                <option value="GCSE/DT/5" disabled>The impact of new and emerging technologies when developing design solutions</option>
-                <option value="GCSE/DT/6" disabled>Sources of energy</option>
-                <option value="GCSE/DT/7" disabled>Environmental, social and economic influences</option>
-                <option value="GCSE/DT/8" disabled>Communicating design solutions</option>
-                <option value="GCSE/DT/9" disabled>Sources of information when thinking and when problem solving</option>
-                <option value="GCSE/DT/10" disabled>Categories of materials</option>
-                <option value="GCSE/DT/11" disabled>Characteristic properties of materials</option>
-                <option value="GCSE/DT/12" disabled>Controlled movement</option>
-                <option value="GCSE/DT/13" disabled>Electronic systems</option>
-                <option value="GCSE/DT/14" disabled>The impact of new and emerging technologies on production techniques and systems</option>
-                <option value="GCSE/DT/16">Natural and manufactured timber</option>
+            <optgroup label="Computer Science" id="option-subject">
+                <optgroup label="Paper 1" id="subject-indent">
+                    <option value="GCSE/CS/1">Systems Architecture</option>
+                    <option value="GCSE/CS/2">Data Representation</option>
+                    <option value="GCSE/CS/3">Wired and Wireless Networks</option>
+                    <option value="GCSE/CS/4">Systems Software and Security</option>
+                    <option value="GCSE/CS/5">Ethical</option>
+                </optgroup>
+                <optgroup label="Paper 2" id="subject-indent">
+                    <option value="GCSE/CS/6">Algorithms</option>
+                    <option value="GCSE/CS/7">Programming Fundamentals</option>
+                    <option value="GCSE/CS/8">Producing Robust Programs</option>
+                    <option value="GCSE/CS/9" disabled>Logic and Languages</option>
+                    <option value="GCSE/CS/10" disabled>Programming Skills</option>
+                </optgroup>
             </optgroup>
-        </optgroup>
-        <optgroup></optgroup>
+            <optgroup></optgroup>
 
-        <optgroup label="Music" id="option-subject">
-            <optgroup label="Keywords" id="subject-indent">
-                <option value="GCSE/MU/0">Keywords</option>
+            <optgroup label="Design and Technology" id="option-subject">
+                <optgroup label="Exam" id="subject-indent">
+                    <option value="GCSE/DT/1" disabled>Exploring the context of a design solution</option>
+                    <option value="GCSE/DT/2" disabled>Usability</option>
+                    <option value="GCSE/DT/3" disabled>Opportunities and constraints that influence design and making</option>
+                    <option value="GCSE/DT/4" disabled>Developments in technology and their influence on design decisions and practice</option>
+                    <option value="GCSE/DT/5" disabled>The impact of new and emerging technologies when developing design solutions</option>
+                    <option value="GCSE/DT/6" disabled>Sources of energy</option>
+                    <option value="GCSE/DT/7" disabled>Environmental, social and economic influences</option>
+                    <option value="GCSE/DT/8" disabled>Communicating design solutions</option>
+                    <option value="GCSE/DT/9" disabled>Sources of information when thinking and when problem solving</option>
+                    <option value="GCSE/DT/10" disabled>Categories of materials</option>
+                    <option value="GCSE/DT/11" disabled>Characteristic properties of materials</option>
+                    <option value="GCSE/DT/12" disabled>Controlled movement</option>
+                    <option value="GCSE/DT/13" disabled>Electronic systems</option>
+                    <option value="GCSE/DT/14" disabled>The impact of new and emerging technologies on production techniques and systems</option>
+                    <option value="GCSE/DT/16">Natural and manufactured timber</option>
+                </optgroup>
             </optgroup>
-            <optgroup label="Instrumental music 1700-1820" id="subject-indent">
-                <option value="GCSE/MU/1">Brandenburg Concerto No.5</option>
-                <option value="GCSE/MU/2">Piano Sonata No.8</option>
-            </optgroup>
-            <optgroup label="Vocal Music" id="subject-indent">
-                <option value="GCSE/MU/3">Music for a While</option>
-                <option value="GCSE/MU/4">Killer Queen</option>
-            </optgroup>
-            <optgroup label="Music for Stage and Screen" id="subject-indent">
-                <option value="GCSE/MU/5">Defying Gravity</option>
-                <option value="GCSE/MU/6">Star Wars</option>
-            </optgroup>
-            <optgroup label="Fusions" id="subject-indent">
-                <option value="GCSE/MU/7">Release</option>
-                <option value="GCSE/MU/8">Samba Em Preludio</option>
-            </optgroup>
-        </optgroup>
-        <optgroup></optgroup>
+            <optgroup></optgroup>
 
-        <optgroup label="Spanish" id="option-subject">
-            <optgroup label="General phrases" id="subject-indent">
-                <option value="GCSE/SP/0">General phrases</option>
+            <optgroup label="Music" id="option-subject">
+                <optgroup label="Keywords" id="subject-indent">
+                    <option value="GCSE/MU/0">Keywords</option>
+                </optgroup>
+                <optgroup label="Instrumental music 1700-1820" id="subject-indent">
+                    <option value="GCSE/MU/1">Brandenburg Concerto No.5</option>
+                    <option value="GCSE/MU/2">Piano Sonata No.8</option>
+                </optgroup>
+                <optgroup label="Vocal Music" id="subject-indent">
+                    <option value="GCSE/MU/3">Music for a While</option>
+                    <option value="GCSE/MU/4">Killer Queen</option>
+                </optgroup>
+                <optgroup label="Music for Stage and Screen" id="subject-indent">
+                    <option value="GCSE/MU/5">Defying Gravity</option>
+                    <option value="GCSE/MU/6">Star Wars</option>
+                </optgroup>
+                <optgroup label="Fusions" id="subject-indent">
+                    <option value="GCSE/MU/7">Release</option>
+                    <option value="GCSE/MU/8">Samba Em Preludio</option>
+                </optgroup>
             </optgroup>
-            <optgroup label="Identity and Culture" id="subject-indent">
-                <option value="GCSE/SP/1" disabled>Me, my family and friends</option>
-                <option value="GCSE/SP/2" disabled>Technology in everday life</option>
-                <option value="GCSE/SP/3">Free-time activites</option>
-                <option value="GCSE/SP/4" disabled>Customs and festivals</option>
-            </optgroup>
-            <optgroup label="Local, national, internation and global areas of interest" id="subject-indent">
-                <option value="GCSE/SP/5" disabled>Home, town, neighbourhood and region</option>
-                <option value="GCSE/SP/6" disabled>Social issues</option>
-                <option value="GCSE/SP/7">Global issues</option>
-                <option value="GCSE/SP/8" disabled>Travel and tourism</option>
-            </optgroup>
-            <optgroup label="Current and future study and employment" id="subject-indent">
-                <option value="GCSE/SP/9" disabled>My studies</option>
-                <option value="GCSE/SP/10" disabled>Life at school and college</option>
-                <option value="GCSE/SP/11" disabled>Education post-16</option>
-                <option value="GCSE/SP/12" disabled>Jobs, career choices and ambitions</option>
-            </optgroup>
-        </optgroup>
-        <optgroup></optgroup>
+            <optgroup></optgroup>
 
-        <optgroup label="Religion, Philosophy and Ethics" id="option-subject">
-            <optgroup label="Exam" id="subject-indent">
-                <option value="GCSE/RE/1">Christianity</option>
+            <optgroup label="Spanish" id="option-subject">
+                <optgroup label="General phrases" id="subject-indent">
+                    <option value="GCSE/SP/0">General phrases</option>
+                </optgroup>
+                <optgroup label="Identity and Culture" id="subject-indent">
+                    <option value="GCSE/SP/1" disabled>Me, my family and friends</option>
+                    <option value="GCSE/SP/2" disabled>Technology in everday life</option>
+                    <option value="GCSE/SP/3">Free-time activites</option>
+                    <option value="GCSE/SP/4" disabled>Customs and festivals</option>
+                </optgroup>
+                <optgroup label="Local, national, internation and global areas of interest" id="subject-indent">
+                    <option value="GCSE/SP/5" disabled>Home, town, neighbourhood and region</option>
+                    <option value="GCSE/SP/6" disabled>Social issues</option>
+                    <option value="GCSE/SP/7">Global issues</option>
+                    <option value="GCSE/SP/8" disabled>Travel and tourism</option>
+                </optgroup>
+                <optgroup label="Current and future study and employment" id="subject-indent">
+                    <option value="GCSE/SP/9" disabled>My studies</option>
+                    <option value="GCSE/SP/10" disabled>Life at school and college</option>
+                    <option value="GCSE/SP/11" disabled>Education post-16</option>
+                    <option value="GCSE/SP/12" disabled>Jobs, career choices and ambitions</option>
+                </optgroup>
+            </optgroup>
+            <optgroup></optgroup>
+
+            <optgroup label="Religion, Philosophy and Ethics" id="option-subject">
+                <optgroup label="Exam" id="subject-indent">
+                    <option value="GCSE/RE/1">Christianity</option>
+                </optgroup>
             </optgroup>
         </optgroup>
     </select>
