@@ -39,7 +39,7 @@ async function changeTopic(){
 
     try {
         var request = new XMLHttpRequest()
-        request.open("GET",`https://raw.githubusercontent.com/RetroCoder13/revision/questions/${topic.substring(0,2)}/${topic.substring(2)}/questions.js`,false);
+        request.open("GET",`https://raw.githubusercontent.com/RetroCoder13/revision/questions/${topic}/questions.js`,false);
         request.send()
         await eval(request.responseText)
 
